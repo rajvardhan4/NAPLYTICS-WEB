@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="NapLytics.html">
     <link rel="stylesheet" href="index.html">
+    
     <style>
         .single-slider {
             position: relative;
@@ -122,6 +123,34 @@
             max-width: 700px !important;
             margin: 30px auto !important;
         }
+
+        
+.grid-wrapper{
+			--auto-grid-min-size: 16rem;
+			display: grid;
+			grid-gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+
+		}
+		.grid-wrapper li{
+			background-color: #bbb7b7b7;
+			color: #ffffff;
+			font-size: 24px;
+			list-style-type: none;
+			padding: 5rem 1rem;
+			text-align: center;
+			text-transform: capitalize;
+      font-weight: 600;
+		}
+		.main-container{
+			margin: 0 auto;
+			max-width: 1170px;
+			padding:2rem 1rem;
+		}
     </style>
 
 
@@ -204,7 +233,6 @@
         <!--/ End Header Inner -->
     </header>
     <!-- End Header Area -->
-
 
 
 
@@ -425,11 +453,52 @@
 	</script>
 
 
-    <div class="flex justify-center items-center">
-        <a href="index.html">
-            <img src="img/Survey.png" alt="Sample Image" class="rounded-lg shadow-lg w-full max-w-xs object-cover" />
-        </a>
+
+<section>
+    <div class="main-container">
+        <ul class="grid-wrapper">
+            <li>Video 1</li>
+            <li>Video 2</li>
+            <li>Video 3</li>
+            <li>Video 4</li>
+            <li>Video 5</li>
+            <li>Video 6</li>
+            <li>Video 7</li>
+            <li>Video 8</li>
+            <li>Video 9</li>
+            <li>Video 10</li>	
+            <li>Video 11</li>	
+            <li>Video 12</li>	
+        </ul>
     </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

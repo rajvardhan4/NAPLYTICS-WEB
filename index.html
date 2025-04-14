@@ -46,6 +46,10 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="NapLytics.html">
 	<link rel="stylesheet" href="Survey.html">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="resouces.html">
 	<style>
 		.single-slider {
 			position: relative;
@@ -116,12 +120,18 @@
 		.modal-header {
 			display: flex;
 			justify-content: center !important;
+			border-bottom: 0px;
 		}
 
 		.modal-dialog {
-        max-width: 700px !important;
-        margin: 30px auto !important;
-    }
+			max-width: 700px !important;
+			margin: 30px auto !important;
+		}
+
+		.btn-close {
+			width: 20px;
+			height: 20px;
+		}
 	</style>
 
 
@@ -206,81 +216,225 @@
 	<!-- End Header Area -->
 
 
-<!-- Modal -->
-<div class="modal fade" id="surveyModal" tabindex="-1" aria-labelledby="surveyModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-lg"> <!-- modal-lg for better width on large screens -->
-	  <div class="modal-content">
-  
-		<div class="modal-header text-center">
-		  <h5 class="modal-title w-100" id="surveyModalLabel">Questionnaire</h5>
-		</div>
-  
-		<div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
-		  <!-- Survey content -->
-		  <p class="mb-3">
-			<strong>QUESTIONNAIRE FOR ASSESSMENT OF SLEEP AND RELATED CO-MORBIDITIES</strong>
-		  </p>
-  
-		  <p>
-			<strong>Purpose:</strong> Our study aims to increase awareness about the significance of sleep and its
-			relationship with comorbidities. We aim to identify the sleep-deprived population in the Chandigarh region,
-			assess the impact of sleep on comorbidities, and determine which patients with comorbidities are associated
-			with sleep deprivation.
-		  </p>
-  
-		  <p>
-			There is a lack of awareness about the importance of sleep among individuals. In today's fast-paced world,
-			sleep is often neglected. To address this lack of awareness, health professionals will be involved, and a
-			sleep and related comorbidities dashboard will be created.
-		  </p>
-  
-		  <p>
-			We use a variety of scales to assess these factors, including the Pittsburg Sleep Quality Index (PSQI),
-			Epworth Sleepiness Scale (ESS), Karolinska Sleepiness Scale (KSS), Perceived Stress Index, and a
-			self-assessment scale to determine morningness-eveningness. We will measure participants' responses to these
-			questions using scaled scores. The questionnaire will take approximately an hour, and the study details and
-			informed consent will be discussed as well.
-		  </p>
-  
-		  <div class="mt-4">
-			<div class="form-check mb-2" style="padding-left: 20px;">
-			  <input type="checkbox" class="form-check-input" id="agreeTandC1" />
-			  <label class="form-check-label" for="agreeTandC1">I agree to the T&Cs mentioned in the PIS form</label>
+	<!-- Main Modal -->
+	<div class="modal fade" id="surveyModal" tabindex="-1" aria-labelledby="surveyModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+
+			<div class="modal-content">
+
+				<div class="modal-header text-center ">
+					<h5 class="modal-title w-100" id="surveyModalLabel">Questionnaire</h5>
+					<button class="btn-close " data-bs-dismiss="modal" aria-label="Close">
+						<i class="fa-solid fa-xmark "></i>
+					</button>
+				</div>
+				<div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+					<p class="mb-3"><strong>QUESTIONNAIRE FOR ASSESSMENT OF SLEEP AND RELATED CO-MORBIDITIES</strong>
+					</p>
+					<p><strong>Purpose:</strong> Our study aims to increase awareness about the significance of sleep
+						and its relationship with comorbidities...</p>
+					<p>We use a variety of scales to assess these factors... The questionnaire will take approximately
+						an hour.</p>
+
+					<p>
+						There is a lack of awareness about the importance of sleep among individuals. In today's
+						fast-paced world,
+						sleep is often neglected. To address this lack of awareness, health professionals will be
+						involved, and a
+						sleep and related comorbidities dashboard will be created.
+					</p>
+
+					<p>
+						We use a variety of scales to assess these factors, including the Pittsburg Sleep Quality Index
+						(PSQI),
+						Epworth Sleepiness Scale (ESS), Karolinska Sleepiness Scale (KSS), Perceived Stress Index, and a
+						self-assessment scale to determine morningness-eveningness. We will measure participants'
+						responses to these
+						questions using scaled scores. The questionnaire will take approximately an hour, and the study
+						details and
+						informed consent will be discussed as well.
+					</p>
+
+
+					<!-- Checkboxes -->
+					<div class="mt-4">
+						<div class="form-check mb-2" style="padding-left: 20px;">
+							<input type="checkbox" class="form-check-input" id="agreeTandC1"
+								onclick="event.preventDefault(); showModal('pisModal')" />
+
+							<label class="form-check-label" for="agreeTandC1">I agree to the T&Cs mentioned in the PIS
+								form</label>
+						</div>
+						<div class="form-check mb-2" style="padding-left: 20px;">
+							<input type="checkbox" class="form-check-input" id="agreeTandC2"
+								onclick="event.preventDefault(); showModal('icfModal')" />
+							<label class="form-check-label" for="agreeTandC2">I agree to the T&Cs mentioned in the ICF
+								form</label>
+						</div>
+					</div>
+				</div>
+
+				<a href="Survey.html">
+					<div class="modal-footer d-flex justify-content-center">
+						<button id="submitBtn" type="button"
+							class="btn btn-primary w-100 w-sm-auto d-none">Submit</button>
+					</div>
+				</a>
 			</div>
-			<div class="form-check mb-2" style="padding-left: 20px;">
-			  <input type="checkbox" class="form-check-input" id="agreeTandC2" />
-			  <label class="form-check-label" for="agreeTandC2">I agree to the T&Cs mentioned in the ICF form</label>
-			</div>
-		  </div>
 		</div>
-  
-		<a href="Survey.html">
-			<div class="modal-footer d-flex justify-content-center">
-				<button id="submitBtn" type="button" class="btn btn-primary w-100 w-sm-auto d-none">Submit</button>
-			  </div>
-		</a>
-  
-	  </div>
 	</div>
-  </div>
-  
-  <!-- JavaScript to handle checkbox logic -->
-  <script>
-	const checkbox1 = document.getElementById("agreeTandC1");
-	const checkbox2 = document.getElementById("agreeTandC2");
-	const submitBtn = document.getElementById("submitBtn");
-  
-	function toggleSubmitButton() {
-	  if (checkbox1.checked && checkbox2.checked) {
-		submitBtn.classList.remove("d-none");
-	  } else {
-		submitBtn.classList.add("d-none");
-	  }
-	}
-  
-	checkbox1.addEventListener("change", toggleSubmitButton);
-	checkbox2.addEventListener("change", toggleSubmitButton);
-  </script>
+
+	<!-- PIS Modal -->
+	<div class="modal fade " style="backdrop-filter: blur(8px);
+	background-color: rgba(0, 0, 0, 0.4);" id="pisModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-header text-center bg-white rounded">
+				<h5 class="modal-title w-100 " id="surveyModalLabel">Participant Information Sheet (PIS)</h5>
+				<button class="btn-close " data-bs-dismiss="modal" aria-label="Close">
+					<i class="fa-solid fa-xmark "></i>
+				</button>
+			</div>
+			<div class="modal-content p-3">
+				<ol class="ps-3 p-5">
+					<li><strong>Study number:</strong> IEC (September 2023) #2</li>
+					<li><strong>Principal Investigator:</strong> Dr. Anshu Bhardwaj</li>
+					<li><strong>Name of the Institution:</strong> CSIR-Institute of Microbial Technology, Sector-39A,
+						Chandigarh-160036</li>
+					<li><strong>Study title:</strong> Unveiling the Impact of Sleep Deprivation on Comorbidities in the
+						Population of Chandigarh with Emphasis on Awareness</li>
+					<li><strong>Study duration:</strong> One year</li>
+					<li><strong>Sponsor of study:</strong> DST, Chandigarh</li>
+					<li><strong>Purpose and benefits of study:</strong>
+						<p>Our study aims to increase awareness about the significance of sleep and its relationship
+							with comorbidities. It aims to identify the sleep-deprived population in the Chandigarh
+							region, assess the impact of sleep on comorbidities, and determine which patients with
+							comorbidities are associated with sleep deprivation.</p>
+					</li>
+					<li><strong>Study procedure, duration and schedule pertaining to participants:</strong>
+						<p>We will use questionnaires and validated scales like PSQI, ESS, KSS, and Perceived Stress
+							Index. The study duration will last for one year. The questionnaire will take approx. 1 hour
+							including consent discussion.</p>
+					</li>
+					<li><strong>Possible risks to the participant:</strong> None</li>
+					<li><strong>Confidentiality:</strong> No traceable information is collected for participants.</li>
+					<li><strong>Participant’s responsibilities:</strong> Fill the form accurately.</li>
+					<li><strong>Participant’s rights:</strong> Right to withdraw anytime and access their own data.</li>
+					<li><strong>Compensation:</strong> NA</li>
+					<li><strong>Contact information:</strong> Dr. Anshu Bhardwaj, +91-9910727490</li>
+				</ol>
+				<div class="text-center">
+					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC1', 'pisModal')">
+						Please accept our T&C
+					</button>
+
+					<button class="btn btn-danger" onclick="showDeclineMsg(this)">No, I can't agree</button>
+					<div class="text-danger mt-2 d-none">If you can't agree... then you can't take a survey!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ICF Modal -->
+	<div class="modal fade " style="backdrop-filter: blur(8px);
+	background-color: rgba(0, 0, 0, 0.4);" id="icfModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered ">
+			<div class="modal-header  text-center bg-white rounded ">
+				<h5 class="modal-title w-100" id="surveyModalLabel">Informed Consent Form (ICF)</h5>
+				<button class="btn-close " data-bs-dismiss="modal" aria-label="Close">
+					<i class="fa-solid fa-xmark "></i>
+				</button>
+			</div>
+			<div class="modal-content p-3">
+				<ol class="ps-3 p-5">
+					<li><strong>Study number:</strong> IEC (September 2023) #2</li>
+					<li><strong>Principal Investigator:</strong> Dr. Anshu Bhardwaj</li>
+					<li><strong>Name of the Institution:</strong> CSIR-Institute of Microbial Technology, Sector-39A,
+						Chandigarh-160036</li>
+					<li><strong>Study title:</strong> Unveiling the Impact of Sleep Deprivation on Comorbidities in the
+						Population of Chandigarh with Emphasis on Awareness</li>
+					<li><strong>Study duration:</strong> One year</li>
+					<li><strong>Sponsor of study:</strong> DST, Chandigarh</li>
+					<li><strong>Purpose and benefits of study:</strong>
+						<p>Our study aims to increase awareness about the significance of sleep and its relationship
+							with comorbidities. It aims to identify the sleep-deprived population in the Chandigarh
+							region, assess the impact of sleep on comorbidities, and determine which patients with
+							comorbidities are associated with sleep deprivation.</p>
+					</li>
+					<li><strong>Study procedure, duration and schedule pertaining to participants:</strong>
+						<p>We will use questionnaires and validated scales like PSQI, ESS, KSS, and Perceived Stress
+							Index. The study duration will last for one year. The questionnaire will take approx. 1 hour
+							including consent discussion.</p>
+					</li>
+					<li><strong>Possible risks to the participant:</strong> None</li>
+					<li><strong>Confidentiality:</strong> No traceable information is collected for participants.</li>
+					<li><strong>Participant’s responsibilities:</strong> Fill the form accurately.</li>
+					<li><strong>Participant’s rights:</strong> Right to withdraw anytime and access their own data.</li>
+					<li><strong>Compensation:</strong> NA</li>
+					<li><strong>Contact information:</strong> Dr. Anshu Bhardwaj, +91-9910727490</li>
+				</ol>
+				<div class="text-center">
+					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC2', 'icfModal')">Please accept
+						our T&C</button>
+					<button class="btn btn-danger" onclick="showDeclineMsg(this)">No, I can't agree</button>
+					<div class="text-danger mt-2 d-none">If you can't agree... then you can't take a survey!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript -->
+	<script>
+		function showModal(id) {
+			const modal = new bootstrap.Modal(document.getElementById(id));
+			modal.show();
+		}
+		function acceptTnC(checkboxId, modalId) {
+			// Check the checkbox
+			document.getElementById(checkboxId).checked = true;
+
+			// Get the modal
+			const modal = document.getElementById(modalId);
+
+			// Hide the warning message if it's visible
+			const warningMsg = modal.querySelector(".text-danger");
+			if (warningMsg) {
+				warningMsg.classList.add("d-none");
+			}
+
+			// Show alert first, then close the modal after user clicks "OK"
+			alert(`Thank you! You have accepted the ${modalId === 'pisModal' ? 'PIS' : 'ICF'}.`);
+
+			// Enable submit button if both checkboxes are checked
+			toggleSubmitButton();
+
+			// Hide the modal using Bootstrap
+			const modalInstance = bootstrap.Modal.getInstance(modal);
+			if (modalInstance) {
+				modalInstance.hide();
+			}
+
+			setTimeout(() => {
+				modal.remove();
+			}, 500);
+		}
+
+
+
+		function showDeclineMsg(button) {
+			const msg = button.nextElementSibling;
+			msg.classList.remove('d-none');
+		}
+
+		function toggleSubmitButton() {
+			const checkbox1 = document.getElementById("agreeTandC1");
+			const checkbox2 = document.getElementById("agreeTandC2");
+			const submitBtn = document.getElementById("submitBtn");
+
+			if (checkbox1.checked && checkbox2.checked) {
+				submitBtn.classList.remove("d-none");
+			}
+		}
+	</script>
 
 
 
@@ -311,8 +465,14 @@
 									NapLytic analyzes sleep patterns and associated comorbidities using survey-based
 									questions...</p>
 								<div class="button">
-									<a href="#" class="btn">Take Survey</a>
-									<a href="#" class="btn primary">Learn More</a>
+									<div class="get-quote">
+										<!-- Trigger the modal with data-bs-toggle and data-bs-target -->
+										<a href="#" class="btn" data-bs-toggle="modal"
+											data-bs-target="#surveyModal">Take
+											Survey</a>
+										<a href="resouces.html" class="btn primary">Resources</a>
+
+									</div>
 								</div>
 							</div>
 						</div>
@@ -334,8 +494,14 @@
 									marketing metrics, Naplytics empowers your team with real-time visualizations and
 									intelligent dashboards. </p>
 								<div class="button">
-									<a href="#" class="btn">Take Survey</a>
-									<a href="#" class="btn primary">About Us</a>
+									<div class="get-quote">
+										<!-- Trigger the modal with data-bs-toggle and data-bs-target -->
+										<a href="#" class="btn" data-bs-toggle="modal"
+											data-bs-target="#surveyModal">Take
+											Survey</a>
+										<a href="#" class="btn primary">About Us</a>
+
+									</div>
 								</div>
 							</div>
 						</div>
@@ -360,9 +526,15 @@
 									growing enterprise, Naplytics gives you the clarity you need to scale with
 									confidence.</p>
 								<div class="button">
-									<a href="#" class="btn">Take Survey</a>
+									<div class="get-quote">
+										<!-- Trigger the modal with data-bs-toggle and data-bs-target -->
+										<a href="#" class="btn" data-bs-toggle="modal"
+											data-bs-target="#surveyModal">Take
+											Survey</a>
+										<a href="#" class="btn primary">Conatct Now</a>
 
-									<a href="#" class="btn primary">Conatct Now</a>
+									</div>
+
 								</div>
 							</div>
 						</div>
