@@ -2,127 +2,192 @@
 <html class="no-js" lang="zxx">
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Site keywords here">
-    <meta name="description" content="">
-    <meta name='copyright' content=''>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="Site keywords here">
+	<meta name="description" content="">
+	<meta name='copyright' content=''>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Title -->
-    <title>NapLytics</title>
+	<!-- Title -->
+	<title>NapLytics</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png">
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.png">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+		rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- icofont CSS -->
-    <link rel="stylesheet" href="css/icofont.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" href="css/slicknav.min.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <!-- Datepicker CSS -->
-    <link rel="stylesheet" href="css/datepicker.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Nice Select CSS -->
+	<link rel="stylesheet" href="css/nice-select.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- icofont CSS -->
+	<link rel="stylesheet" href="css/icofont.css">
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="css/slicknav.min.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="css/owl-carousel.css">
+	<!-- Datepicker CSS -->
+	<link rel="stylesheet" href="css/datepicker.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- Magnific Popup CSS -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Medipro CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="NapLytics.html">
-    <link rel="stylesheet" href="index.html">
-    <style>
-        .single-slider {
-            position: relative;
-            background-size: cover;
-            background-position: center;
-        }
+	<!-- Medipro CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="NapLytics.html">
+	<link rel="stylesheet" href="index.html">
 
-        .overlay-layer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #ffffff91;
-            /* Adjust the opacity as needed */
-            z-index: 1;
-        }
 
-        /* Make sure text is above the overlay */
-        .single-slider .container,
-        .single-slider .text {
-            position: relative;
-            z-index: 2;
-        }
 
-        .why-choose .choose-left h3:before {
-            position: absolute;
-            content: "";
-            left: 50%;
-            bottom: 0;
-            height: 2px;
-            width: 50px;
-            background: #ffffff00;
-        }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 0 10px;
-        }
+	<style>
+		.single-slider {
+			position: relative;
+			background-size: cover;
+			background-position: center;
+		}
 
-        /* Default (Desktop and Larger Devices) */
-        .list-imgs {
-            padding-left: 135px;
-        }
+		.overlay-layer {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #ffffff91;
+			/* Adjust the opacity as needed */
+			z-index: 1;
+		}
 
-        /* Mobile View (screen width less than or equal to 768px) */
-        @media (max-width: 768px) {
-            .list-imgs {
-                padding-left: 0;
-                padding: 11px;
-            }
-        }
+		/* Make sure text is above the overlay */
+		.single-slider .container,
+		.single-slider .text {
+			position: relative;
+			z-index: 2;
+		}
 
-        .tak-btn {
-            background-color: #1A76D1 !important;
-            color: white;
-            /* Default text color */
-            transition: color 0.3s ease;
-            /* Smooth transition */
-        }
+		.why-choose .choose-left h3:before {
+			position: absolute;
+			content: "";
+			left: 50%;
+			bottom: 0;
+			height: 2px;
+			width: 50px;
+			background: #ffffff00;
+		}
 
-        .tak-btn:hover {
-            color: white !important;
-            /* Change text color to white on hover */
-        }
+		.section-title {
+			text-align: center;
+			margin-bottom: 60px;
+			padding: 0 10px;
+		}
 
-        .modal-header {
-            display: flex;
-            justify-content: center !important;
-        }
+		/* Default (Desktop and Larger Devices) */
+		.list-imgs {
+			padding-left: 135px;
+		}
 
-        .modal-dialog {
-            max-width: 700px !important;
-            margin: 30px auto !important;
-        }
-    </style>
+		/* Mobile View (screen width less than or equal to 768px) */
+		@media (max-width: 768px) {
+			.list-imgs {
+				padding-left: 0;
+				padding: 11px;
+			}
+		}
+
+		.tak-btn {
+			background-color: #1A76D1 !important;
+			color: white;
+			/* Default text color */
+			transition: color 0.3s ease;
+			/* Smooth transition */
+		}
+
+		.tak-btn:hover {
+			color: white !important;
+			/* Change text color to white on hover */
+		}
+
+		.modal-header {
+			display: flex;
+			justify-content: center !important;
+		}
+
+		.modal-dialog {
+			max-width: 700px !important;
+			margin: 30px auto !important;
+		}
+
+
+
+		#containers {
+			border-radius: 20px;
+			background: radial-gradient(#007bff, rgba(199, 199, 199, 0.795));
+		}
+
+		.step-container {
+			position: relative;
+			text-align: center;
+			transform: translateY(-43%);
+		}
+
+		.step {
+			background: rgba(255, 255, 255, 0.1);
+			/* semi-transparent */
+			backdrop-filter: blur(10px);
+			/* blur effect */
+			-webkit-backdrop-filter: blur(10px);
+			/* for Safari */
+			border-radius: 20px;
+			margin: auto !important;
+			color: #e7eaee;
+			font-size: 17px;
+			padding: 40px;
+			/* optional for spacing inside */
+		}
+
+
+		.step-circle {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #fff;
+			border: 2px solid #007bff;
+			line-height: 30px;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+
+		.form-label {
+			color: rgb(3, 3, 3);
+		}
+
+		.step-circle:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		#multi-step-form {
+			overflow-x: hidden;
+		}
+
+		.form-check-input {
+			position: absolute;
+			margin-top: .25rem;
+		}
+	</style>
 
 
 
@@ -130,80 +195,81 @@
 
 <body>
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-outter"></div>
-            <div class="loader-inner"></div>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="loader-outter"></div>
+			<div class="loader-inner"></div>
 
-            <div class="indicator">
-                <svg width="16px" height="12px">
-                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                </svg>
-            </div>
-        </div>
-    </div>
-    <!-- End Preloader -->
-
-
-
-    <!-- Get Pro Button -->
-
-
-    <!-- Header Area -->
-    <header class="header">
-        <!-- Topbar -->
+			<div class="indicator">
+				<svg width="16px" height="12px">
+					<polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+					<polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<!-- End Preloader -->
 
 
 
-        <!-- End Topbar -->
-        <!-- Header Inner -->
-        <div class="header-inner">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <!-- Start Logo -->
-                            <div class="logo">
-                                <img src="img/logo.png" alt="NapLytics Logo"
-                                    style="max-width: 200px; width: 100%; height: auto; margin-top: 4%;">
-                            </div>
-                            <!-- End Logo -->
-                            <!-- Mobile Nav -->
-                            <div class="mobile-nav"></div>
-                            <!-- End Mobile Nav -->
-                        </div>
-                        <div class="col-lg-7 col-md-9 col-12">
-                            <!-- Main Menu -->
-                            <div class="main-menu">
-                                <nav class="navigation" style="padding-left: 105px;">
-                                    <ul class="nav menu">
-                                        <li class="active"><a href="index.html" style="text-decoration: none;">Home</a></li>
-                                        <li><a href="#" style="text-decoration: none;">Aim</a></li>
-                                        <li><a href="NapLytics.html" style="text-decoration: none;">NapLytics</a></li>
-                                        <li><a href="#" style="text-decoration: none;">Approach</a></li>
-                                        <li><a href="#" style="text-decoration: none;">Contact</a></li>
-                                    </ul>
-                                </nav>
+	<!-- Get Pro Button -->
 
-                            </div>
-                            <!--/ End Main Menu -->
-                        </div>
-                        <div class="col-lg-2 col-12">
-                            <div class="get-quote">
-                                <!-- Trigger the modal with data-bs-toggle and data-bs-target -->
-                                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#surveyModal">Take
-                                    Survey</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ End Header Inner -->
-    </header>
-    <!-- End Header Area -->
+
+	<!-- Header Area -->
+	<header class="header">
+		<!-- Topbar -->
+
+
+
+		<!-- End Topbar -->
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-12">
+							<!-- Start Logo -->
+							<div class="logo">
+								<img src="img/logo.png" alt="NapLytics Logo"
+									style="max-width: 200px; width: 100%; height: auto; margin-top: 4%;">
+							</div>
+							<!-- End Logo -->
+							<!-- Mobile Nav -->
+							<div class="mobile-nav"></div>
+							<!-- End Mobile Nav -->
+						</div>
+						<div class="col-lg-7 col-md-9 col-12">
+							<!-- Main Menu -->
+							<div class="main-menu">
+								<nav class="navigation" style="padding-left: 105px;">
+									<ul class="nav menu">
+										<li class="active"><a href="index.html" style="text-decoration: none;">Home</a>
+										</li>
+										<li><a href="#" style="text-decoration: none;">Aim</a></li>
+										<li><a href="NapLytics.html" style="text-decoration: none;">NapLytics</a></li>
+										<li><a href="#" style="text-decoration: none;">Approach</a></li>
+										<li><a href="#" style="text-decoration: none;">Contact</a></li>
+									</ul>
+								</nav>
+
+							</div>
+							<!--/ End Main Menu -->
+						</div>
+						<div class="col-lg-2 col-12">
+							<div class="get-quote">
+								<!-- Trigger the modal with data-bs-toggle and data-bs-target -->
+								<a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#surveyModal">Take
+									Survey</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!-- End Header Area -->
 
 
 
@@ -425,14 +491,1110 @@
 	</script>
 
 
-    <div class="flex justify-center items-center">
-        <a href="index.html">
-            <img src="img/Survey.png" alt="Sample Image" class="rounded-lg shadow-lg w-full max-w-xs object-cover" />
-        </a>
-    </div>
 
 
 
+
+
+
+
+
+
+
+	<div id="containers" class="container mt-5 mb-5">
+		<div class="progress px-1" style="height: 3px;">
+			<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+				aria-valuemax="100"></div>
+		</div>
+		<div class="step-container d-flex justify-content-between">
+			<div class="step-circle" onclick="displayStep(1)">1</div>
+			<div class="step-circle" onclick="displayStep(2)">2</div>
+			<div class="step-circle" onclick="displayStep(3)">3</div>
+			<div class="step-circle" onclick="displayStep(4)">4</div>
+			<div class="step-circle" onclick="displayStep(5)">5</div>
+			<div class="step-circle" onclick="displayStep(6)">6</div>
+			<div class="step-circle" onclick="displayStep(7)">7</div>
+			<div class="step-circle" onclick="displayStep(8)">8</div>
+			<div class="step-circle" onclick="displayStep(9)">9</div>
+		</div>
+
+		<form id="multi-step-form">
+			<!-- Repeat this block for each step, just change class names to step-1, step-2, ..., step-9 -->
+			<div class="step step-1">
+				<h3 class="text-center fromheading mb-4">General Question</h3>
+			
+				<!-- ID 1 - Name -->
+				<div class="mb-3 row">
+					<label for="field1" class="col-sm-12 col-md-4 col-form-label form-label">Please type your name</label>
+					<div class="col-sm-12 col-md-8">
+						<input type="text" class="form-control" id="field1" name="field1" required>
+					</div>
+				</div>
+			
+				<!-- ID 2 - Email -->
+				<div class="mb-3 row">
+					<label for="field2" class="col-sm-12 col-md-4 col-form-label form-label">Please type your email address</label>
+					<div class="col-sm-12 col-md-8">
+						<input type="email" class="form-control" id="field2" name="field2" required>
+					</div>
+				</div>
+			
+				<!-- ID 3 - Gender -->
+				<div class="mb-3">
+					<label class="form-label">Please choose your gender</label><br>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field3" id="gender1" value="Male" required>
+						<label class="form-check-label" for="gender1">Male</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field3" id="gender2" value="Female">
+						<label class="form-check-label" for="gender2">Female</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field3" id="gender3" value="Transgender">
+						<label class="form-check-label" for="gender3">Transgender</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field3" id="gender4" value="I don't wish to answer">
+						<label class="form-check-label" for="gender4">I don't wish to answer</label>
+					</div>
+				</div>
+			
+				<!-- ID 4 - Age -->
+				<div class="mb-3 row">
+					<label for="field4" class="col-sm-12 col-md-4 col-form-label form-label">Let me know your age</label>
+					<div class="col-sm-12 col-md-8">
+						<input type="number" class="form-control" id="field4" name="field4" min="18" max="100" required>
+					</div>
+				</div>
+			
+				<!-- ID 5 - Consent -->
+				<div class="mb-3">
+					<label class="form-label">Do you consent to provide information?</label><br>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field5" id="consentYes" value="Yes" required>
+						<label class="form-check-label" for="consentYes">Yes</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field5" id="consentNo" value="No">
+						<label class="form-check-label" for="consentNo">No</label>
+					</div>
+				</div>
+			
+				<!-- ID 6 - Occupation -->
+				<div class="mb-3">
+					<label class="form-label">Occupation</label><br>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field6" id="occupation1" value="Researcher" required>
+						<label class="form-check-label" for="occupation1">Researcher</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field6" id="occupation2" value="Shift Worker">
+						<label class="form-check-label" for="occupation2">Shift Worker</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field6" id="occupation3" value="Home-Maker">
+						<label class="form-check-label" for="occupation3">Home-Maker</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field6" id="occupation4" value="Govt employee">
+						<label class="form-check-label" for="occupation4">Govt employee</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field6" id="occupation5" value="Corporate Job">
+						<label class="form-check-label" for="occupation5">Corporate Job</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="field6" id="occupation6" value="Other">
+						<label class="form-check-label" for="occupation6">Other</label>
+					</div>
+				</div>
+			
+				<!-- Next Button -->
+				<div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-primary next-step">Next</button>
+				</div>
+			</div>
+			
+
+
+			<div class="step step-2">
+				<h3 class="text-center fromheading mb-2"> The Epworth Sleepiness Scale</h3>
+				<p class="text-center mb-2 text-white">How likely are you to doze off or fall asleep in the following
+					situations?</p>
+
+				<!-- QUESTION 1 -->
+				<div class="mb-3">
+					<label class="form-label" for="q1">1. Sitting and Reading</label>
+					<div>
+						<div><input type="radio" id="q1-0" name="q1" value="0"> <label for="q1-0">0</label></div>
+						<div><input type="radio" id="q1-1" name="q1" value="1"> <label for="q1-1">1</label></div>
+						<div><input type="radio" id="q1-2" name="q1" value="2"> <label for="q1-2">2</label></div>
+						<div><input type="radio" id="q1-3" name="q1" value="3"> <label for="q1-3">3</label></div>
+					</div>
+				</div>
+
+				<!-- QUESTION 2 -->
+				<div class="mb-3">
+					<label class="form-label" for="q2">2. Watching TV</label>
+					<div>
+						<div><input type="radio" id="q2-0" name="q2" value="0"> <label for="q2-0">0</label></div>
+						<div><input type="radio" id="q2-1" name="q2" value="1"> <label for="q2-1">1</label></div>
+						<div><input type="radio" id="q2-2" name="q2" value="2"> <label for="q2-2">2</label></div>
+						<div><input type="radio" id="q2-3" name="q2" value="3"> <label for="q2-3">3</label></div>
+					</div>
+				</div>
+
+				<!-- QUESTION 3 -->
+				<div class="mb-3">
+					<label class="form-label" for="q3">3. Sitting inactive in public places (e.g., a theatre or a
+						meeting)</label>
+					<div>
+						<div><input type="radio" id="q3-0" name="q3" value="0"> <label for="q3-0">0</label></div>
+						<div><input type="radio" id="q3-1" name="q3" value="1"> <label for="q3-1">1</label></div>
+						<div><input type="radio" id="q3-2" name="q3" value="2"> <label for="q3-2">2</label></div>
+						<div><input type="radio" id="q3-3" name="q3" value="3"> <label for="q3-3">3</label></div>
+					</div>
+				</div>
+
+				<!-- Question 4 -->
+				<div class="mb-3">
+					<label class="form-label" for="q4">4. As a passenger in a car for an hour without a break</label>
+					<div>
+						<div><input type="radio" id="q4-0" name="q4" value="0"> <label for="q4-0">0</label></div>
+						<div><input type="radio" id="q4-1" name="q4" value="1"> <label for="q4-1">1</label></div>
+						<div><input type="radio" id="q4-2" name="q4" value="2"> <label for="q4-2">2</label></div>
+						<div><input type="radio" id="q4-3" name="q4" value="3"> <label for="q4-3">3</label></div>
+					</div>
+				</div>
+
+				<!-- Question 5 -->
+				<div class="mb-3">
+					<label class="form-label" for="q5">5. Lying down to rest in the afternoon when circumstances
+						permit</label>
+					<div>
+						<div><input type="radio" id="q5-0" name="q5" value="0"> <label for="q5-0">0</label></div>
+						<div><input type="radio" id="q5-1" name="q5" value="1"> <label for="q5-1">1</label></div>
+						<div><input type="radio" id="q5-2" name="q5" value="2"> <label for="q5-2">2</label></div>
+						<div><input type="radio" id="q5-3" name="q5" value="3"> <label for="q5-3">3</label></div>
+					</div>
+				</div>
+
+				<!-- Question 6 -->
+				<div class="mb-3">
+					<label class="form-label" for="q6">6. Sitting and talking to someone</label>
+					<div>
+						<div><input type="radio" id="q6-0" name="q6" value="0"> <label for="q6-0">0</label></div>
+						<div><input type="radio" id="q6-1" name="q6" value="1"> <label for="q6-1">1</label></div>
+						<div><input type="radio" id="q6-2" name="q6" value="2"> <label for="q6-2">2</label></div>
+						<div><input type="radio" id="q6-3" name="q6" value="3"> <label for="q6-3">3</label></div>
+					</div>
+				</div>
+
+				<!-- Question 7 -->
+				<div class="mb-3">
+					<label class="form-label" for="q7">7. Sitting quietly after a lunch without alcohol</label>
+					<div>
+						<div><input type="radio" id="q7-0" name="q7" value="0"> <label for="q7-0">0</label></div>
+						<div><input type="radio" id="q7-1" name="q7" value="1"> <label for="q7-1">1</label></div>
+						<div><input type="radio" id="q7-2" name="q7" value="2"> <label for="q7-2">2</label></div>
+						<div><input type="radio" id="q7-3" name="q7" value="3"> <label for="q7-3">3</label></div>
+					</div>
+				</div>
+
+				<!-- Question 8 -->
+				<div class="mb-3">
+					<label class="form-label" for="q8">8. In a car, while stopped for a few minutes in traffic</label>
+					<div>
+						<div><input type="radio" id="q8-0" name="q8" value="0"> <label for="q8-0">0</label></div>
+						<div><input type="radio" id="q8-1" name="q8" value="1"> <label for="q8-1">1</label></div>
+						<div><input type="radio" id="q8-2" name="q8" value="2"> <label for="q8-2">2</label></div>
+						<div><input type="radio" id="q8-3" name="q8" value="3"> <label for="q8-3">3</label></div>
+					</div>
+				</div>
+
+
+
+
+				<div class="mt-4 d-flex justify-content-center">
+					<button type="button" class="btn btn-primary prev-step mx-2">Previous</button>
+					<button type="button" class="btn btn-primary next-step mx-2">Next</button>
+				</div>
+
+
+
+			</div>
+
+
+
+			<div class="step step-3">
+				<h3 class="text-center fromheading  mb-4">Pittsburgh Sleep Quality Index (PSQI)</h3>
+				<!-- Question 1 -->
+				<div class="mb-3">
+					<label class="form-label">1. During the past month, what time have you usually gone to bed at
+						night?</label>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="0"> 8:00 –
+						10:00 PM</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="1"> 10:00 -
+						11:00 PM</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="2"> 11:00 PM -
+						12:00 AM</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="3"> 12:00 -
+						2:00 AM</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="4"> after 2:00
+						AM</div>
+				</div>
+				<!-- Question 2 -->
+				<div class="mb-3">
+					<label class="form-label">2. How long (in minutes) has it usually taken you to fall asleep?</label>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="0"> 10 - 15
+					</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="1"> 15 - 30
+					</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="2"> 30 - 45
+					</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="3"> 45 - 60
+					</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="4"> more than
+						60 mins</div>
+				</div>
+
+				<!-- Question 3 -->
+				<div class="mb-3">
+					<label class="form-label">3. What time have you usually gotten up in the morning?</label>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="0"> Before
+						5:00 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="1"> 5:00 -
+						6:30 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="2"> 6:30 -
+						7:45 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="3"> 7:45 -
+						9:45 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="4"> 9:45 -
+						11:00 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="5"> After
+						11:00 am</div>
+				</div>
+
+				<!-- Question 4 -->
+				<div class="mb-3">
+					<label class="form-label">4. How many hours of actual sleep did you get at night?</label>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="0"> less than
+						4 hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="1"> 4 - 5
+						hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="2"> 5 - 6
+						hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="3"> 6 - 7
+						hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="4"> 7 - 8
+						hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="5"> 8 - 9
+						hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="6"> 9 - 10
+						hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="7"> more than
+						10 hours</div>
+				</div>
+
+				<div class="mt-4 d-flex justify-content-center">
+					<button type="button" class="btn btn-primary prev-step mx-2">Previous</button>
+					<button type="button" class="btn btn-primary next-step mx-2">Next</button>
+				</div>
+			</div>
+
+
+
+			<div class="step step-4">
+				<h3 class="text-center fromheading mb-2">Karolinska Sleepiness Scale: Subjective level of sleepiness at a particular time during the day</h3>
+			  
+			
+			  
+				<!-- Question 1 -->
+				<div class="mb-3">
+				  <label for="snoring" class="form-label">If you have a roommate or bed partner, ask him/her how often in the past month you have had loud snoring:</label>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="snoring" id="snoring1" value="Not during the past month">
+					<label class="form-check-label" for="snoring1">Not during the past month</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="snoring" id="snoring2" value="Less than once a week">
+					<label class="form-check-label" for="snoring2">Less than once a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="snoring" id="snoring3" value="Once or twice a week">
+					<label class="form-check-label" for="snoring3">Once or twice a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="snoring" id="snoring4" value="Three or more times a week">
+					<label class="form-check-label" for="snoring4">Three or more times a week</label>
+				  </div>
+				</div>
+			  
+				<!-- Question 2 -->
+				<div class="mb-3">
+				  <label for="breathing" class="form-label">If you have a roommate or bed partner, ask him/her how often in the past month you have had long pauses between breaths while asleep:</label>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="breathing" id="breathing1" value="Not during the past month">
+					<label class="form-check-label" for="breathing1">Not during the past month</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="breathing" id="breathing2" value="Less than once a week">
+					<label class="form-check-label" for="breathing2">Less than once a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="breathing" id="breathing3" value="Once or twice a week">
+					<label class="form-check-label" for="breathing3">Once or twice a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="breathing" id="breathing4" value="Three or more times a week">
+					<label class="form-check-label" for="breathing4">Three or more times a week</label>
+				  </div>
+				</div>
+			  
+				<!-- Question 3 -->
+				<div class="mb-3">
+				  <label for="legs" class="form-label">If you have a roommate or bed partner, ask him/her how often in the past month you have had legs twitching or jerking while you sleep:</label>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="legs" id="legs1" value="Not during the past month">
+					<label class="form-check-label" for="legs1">Not during the past month</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="legs" id="legs2" value="Less than once a week">
+					<label class="form-check-label" for="legs2">Less than once a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="legs" id="legs3" value="Once or twice a week">
+					<label class="form-check-label" for="legs3">Once or twice a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="legs" id="legs4" value="Three or more times a week">
+					<label class="form-check-label" for="legs4">Three or more times a week</label>
+				  </div>
+				</div>
+			  
+				<!-- Question 4 -->
+				<div class="mb-3">
+				  <label for="sittingTime" class="form-label">In a day, how much time do you spend sitting? (e.g., In a car, while stopped for a few minutes in traffic):</label>
+				  <input type="text" class="form-control" id="sittingTime" name="sittingTime">
+				</div>
+			  
+				<!-- Question 5 -->
+				<div class="mb-3">
+				  <label for="disorientation" class="form-label">If you have a roommate or bed partner, ask him/her how often in the past month you have had episodes of disorientation or confusion during sleep:</label>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="disorientation" id="disorientation1" value="Not during the past month">
+					<label class="form-check-label" for="disorientation1">Not during the past month</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="disorientation" id="disorientation2" value="Less than once a week">
+					<label class="form-check-label" for="disorientation2">Less than once a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="disorientation" id="disorientation3" value="Once or twice a week">
+					<label class="form-check-label" for="disorientation3">Once or twice a week</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio" name="disorientation" id="disorientation4" value="Three or more times a week">
+					<label class="form-check-label" for="disorientation4">Three or more times a week</label>
+				  </div>
+				</div>
+			  
+				<!-- Navigation Buttons -->
+				<div class="mt-4 d-flex justify-content-center">
+				  <button type="button" class="btn btn-primary prev-step mx-2">Previous</button>
+				  <button type="button" class="btn btn-primary next-step mx-2">Next</button>
+				</div>
+			  </div>
+			  
+
+			  <div class="step step-5">
+				<h3 class="text-center fromheading mb-3 fs-5 fs-md-4">
+				  Karolinska Sleepiness Scale: Subjective level of sleepiness at a particular time during the day
+				</h3>
+			  
+				<div class="mb-4">
+				 
+					<label class="form-label">On this scale subjects indicate which level best reflects the psycho-physical state experienced in the last 10 min.</label>
+			  
+				  <div class="form-check mb-2">
+					
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option1" value="1">
+					<label class="form-check-label" for="option1">1. Extremely alert</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option2" value="2">
+					<label class="form-check-label" for="option2">2. Very alert</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option3" value="3">
+					<label class="form-check-label" for="option3">3. Alert</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option4" value="4">
+					<label class="form-check-label" for="option4">4. Rather alert</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option5" value="5">
+					<label class="form-check-label" for="option5">5. Neither alert nor sleepy</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option6" value="6">
+					<label class="form-check-label" for="option6">6. Some sign of sleepiness</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option7" value="7">
+					<label class="form-check-label" for="option7">7. Sleepy, but no effort to keep awake</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option8" value="8">
+					<label class="form-check-label" for="option8">8. Sleepy, but some effort to keep awake</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option9" value="9">
+					<label class="form-check-label" for="option9">9. Very sleepy, great effort to keep awake, fighting sleep</label>
+				  </div>
+				  <div class="form-check mb-2">
+					<input class="form-check-input" type="radio" name="sleepinessScale" id="option10" value="10">
+					<label class="form-check-label" for="option10">10. Extremely sleepy, can't keep awake</label>
+				  </div>
+				</div>
+			  
+				<div class="mt-4 d-flex justify-content-center">
+				  <button type="button" class="btn btn-primary prev-step mx-2 px-4 py-2">Previous</button>
+				  <button type="button" class="btn btn-primary next-step mx-2 px-4 py-2">Next</button>
+				</div>
+			  </div>
+			  
+
+			  <div class="step step-6">
+				<h3 class="text-center mb-4">Step 6: Perceived Stress Scale</h3>
+			  
+				<p class="text-center mb-4">For each question choose from the following alternatives: Never, Almost never, Sometimes, Fairly often, Very often</p>
+			  
+				<!-- Question 1 -->
+				<div class="mb-4">
+				  <label class="form-label">1. In the last month, how often have you been upset because of something that happened unexpectedly?</label>
+				  <div>
+					<div><input type="radio" name="q1" value="0"> Never</div>
+					<div><input type="radio" name="q1" value="1"> Almost never</div>
+					<div><input type="radio" name="q1" value="2"> Sometimes</div>
+					<div><input type="radio" name="q1" value="3"> Fairly often</div>
+					<div><input type="radio" name="q1" value="4"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 2 -->
+				<div class="mb-4">
+				  <label class="form-label">2. In the last month, how often have you felt that you were unable to control the important things in your life?</label>
+				  <div>
+					<div><input type="radio" name="q2" value="0"> Never</div>
+					<div><input type="radio" name="q2" value="1"> Almost never</div>
+					<div><input type="radio" name="q2" value="2"> Sometimes</div>
+					<div><input type="radio" name="q2" value="3"> Fairly often</div>
+					<div><input type="radio" name="q2" value="4"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 3 -->
+				<div class="mb-4">
+				  <label class="form-label">3. In the last month, how often have you felt nervous and stressed?</label>
+				  <div>
+					<div><input type="radio" name="q3" value="0"> Never</div>
+					<div><input type="radio" name="q3" value="1"> Almost never</div>
+					<div><input type="radio" name="q3" value="2"> Sometimes</div>
+					<div><input type="radio" name="q3" value="3"> Fairly often</div>
+					<div><input type="radio" name="q3" value="4"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 4 (reverse scoring) -->
+				<div class="mb-4">
+				  <label class="form-label">4. In the last month, how often have you felt confident about your ability to handle your personal problems?</label>
+				  <div>
+					<div><input type="radio" name="q4" value="4"> Never</div>
+					<div><input type="radio" name="q4" value="3"> Almost never</div>
+					<div><input type="radio" name="q4" value="2"> Sometimes</div>
+					<div><input type="radio" name="q4" value="1"> Fairly often</div>
+					<div><input type="radio" name="q4" value="0"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 5 (reverse scoring) -->
+				<div class="mb-4">
+				  <label class="form-label">5. In the last month, how often have you felt that things were going your way?</label>
+				  <div>
+					<div><input type="radio" name="q5" value="4"> Never</div>
+					<div><input type="radio" name="q5" value="3"> Almost never</div>
+					<div><input type="radio" name="q5" value="2"> Sometimes</div>
+					<div><input type="radio" name="q5" value="1"> Fairly often</div>
+					<div><input type="radio" name="q5" value="0"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 6 -->
+				<div class="mb-4">
+				  <label class="form-label">6. In the last month, how often have you found that you could not cope with all the things that you had to do?</label>
+				  <div>
+					<div><input type="radio" name="q6" value="0"> Never</div>
+					<div><input type="radio" name="q6" value="1"> Almost never</div>
+					<div><input type="radio" name="q6" value="2"> Sometimes</div>
+					<div><input type="radio" name="q6" value="3"> Fairly often</div>
+					<div><input type="radio" name="q6" value="4"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 7 (reverse scoring) -->
+				<div class="mb-4">
+				  <label class="form-label">7. In the last month, how often have you been able to control irritations in your life?</label>
+				  <div>
+					<div><input type="radio" name="q7" value="4"> Never</div>
+					<div><input type="radio" name="q7" value="3"> Almost never</div>
+					<div><input type="radio" name="q7" value="2"> Sometimes</div>
+					<div><input type="radio" name="q7" value="1"> Fairly often</div>
+					<div><input type="radio" name="q7" value="0"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 8 (reverse scoring) -->
+				<div class="mb-4">
+				  <label class="form-label">8. In the last month, how often have you felt that you were on top of things?</label>
+				  <div>
+					<div><input type="radio" name="q8" value="4"> Never</div>
+					<div><input type="radio" name="q8" value="3"> Almost never</div>
+					<div><input type="radio" name="q8" value="2"> Sometimes</div>
+					<div><input type="radio" name="q8" value="1"> Fairly often</div>
+					<div><input type="radio" name="q8" value="0"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 9 -->
+				<div class="mb-4">
+				  <label class="form-label">9. In the last month, how often have you been angered because of things that happened that were outside of your control?</label>
+				  <div>
+					<div><input type="radio" name="q9" value="0"> Never</div>
+					<div><input type="radio" name="q9" value="1"> Almost never</div>
+					<div><input type="radio" name="q9" value="2"> Sometimes</div>
+					<div><input type="radio" name="q9" value="3"> Fairly often</div>
+					<div><input type="radio" name="q9" value="4"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Question 10 -->
+				<div class="mb-4">
+				  <label class="form-label">10. In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?</label>
+				  <div>
+					<div><input type="radio" name="q10" value="0"> Never</div>
+					<div><input type="radio" name="q10" value="1"> Almost never</div>
+					<div><input type="radio" name="q10" value="2"> Sometimes</div>
+					<div><input type="radio" name="q10" value="3"> Fairly often</div>
+					<div><input type="radio" name="q10" value="4"> Very often</div>
+				  </div>
+				</div>
+			  
+				<!-- Buttons -->
+				<div class="mt-4 d-flex justify-content-center">
+				  <button type="button" class="btn btn-primary prev-step mx-2">Previous</button>
+				  <button type="button" class="btn btn-primary next-step mx-2">Next</button>
+				</div>
+			  </div>
+			  
+
+			  <div class="step step-7">
+				<h3 class="text-center mb-4"> A self-assessment scale to determine morningness-eveningness in humans</h3>
+			  
+				<!-- Start Questions -->
+				<form id="step7-form">
+				  <!-- Question 1 -->
+				  <div class="mb-4">
+					<label class="form-label d-block">1. What time would you get up if you were entirely free to plan your day?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1"><label class="form-check-label">5:00 - 6:30 am</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1"><label class="form-check-label">6:30 - 7:45 am</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1"><label class="form-check-label">7:45 - 9:45 am</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1"><label class="form-check-label">9:45 - 11:00 am</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1"><label class="form-check-label">11:00 - 12:00 pm</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1"><label class="form-check-label">12:00 pm - 5:00 pm</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 2 -->
+				  <div class="mb-4">
+					<label class="form-label d-block">2. What time would you go to bed if you were entirely free to plan your evening?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2"><label class="form-check-label">8:00 - 9:00 pm</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2"><label class="form-check-label">9:00 - 10:15 pm</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2"><label class="form-check-label">10:15 - 12:30 am</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2"><label class="form-check-label">12:30 - 1:45 am</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2"><label class="form-check-label">1:45 - 3:00 am</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2"><label class="form-check-label">3:00 am - 8:00 pm</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 3 -->
+				  <div class="mb-4">
+					<label class="form-label d-block">3. If there is a specific time at which you have to get up in the morning, to what extent do you depend on being woken up by an alarm clock?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q3"><label class="form-check-label">Not at all dependent</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q3"><label class="form-check-label">Slightly dependent</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q3"><label class="form-check-label">Fairly dependent</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q3"><label class="form-check-label">Very dependent</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 4 -->
+				  <div class="mb-4">
+					<label class="form-label d-block">4. How easy do you find it to wake up early in the morning?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q4"><label class="form-check-label">Very difficult</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q4"><label class="form-check-label">Difficult</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q4"><label class="form-check-label">Neutral</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q4"><label class="form-check-label">Easy</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q4"><label class="form-check-label">Very easy</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 5 -->
+				  <div class="mb-4">
+					<label class="form-label d-block">5. How easy do you find it to stay awake in the evening?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q5"><label class="form-check-label">Very difficult</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q5"><label class="form-check-label">Difficult</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q5"><label class="form-check-label">Neutral</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q5"><label class="form-check-label">Easy</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q5"><label class="form-check-label">Very easy</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Continue the same for questions 6-19 -->
+			  
+				  <div class="mt-4 d-flex justify-content-center">
+					<button type="button" class="btn btn-primary prev-step mx-2">Previous</button>
+					<button type="submit" class="btn btn-success mx-2">Submit</button>
+				  </div>
+				</form>
+			  </div>
+			  
+
+			  <div class="step step-8">
+				<h3 class="text-center mb-2"> Stop Bang</h3>
+				<form id="stop-bang-form">
+				  <!-- Question 1: Do you snore loudly? -->
+				  <div class="mb-4">
+					<label class="form-label d-block">Do you snore loudly?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="1"><label class="form-check-label">Yes</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="0"><label class="form-check-label">No</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 2: Do you often feel tired, fatigued, or sleepy during the daytime -->
+				  <div class="mb-4">
+					<label class="form-label d-block">Do you often feel tired, fatigued, or sleepy during the daytime?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="1"><label class="form-check-label">Yes</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="0"><label class="form-check-label">No</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 3: Has anyone observed you stop breathing during sleep -->
+				  <div class="mb-4">
+					<label class="form-label d-block">Has anyone observed you stop breathing during sleep?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="1"><label class="form-check-label">Yes</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="0"><label class="form-check-label">No</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 4: Do you have (or are you being treated for) high blood pressure -->
+				  <div class="mb-4">
+					<label class="form-label d-block">Do you have (or are you being treated for) high blood pressure?</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="1"><label class="form-check-label">Yes</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="0"><label class="form-check-label">No</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 5: BMI -->
+				  <div class="mb-4">
+					<label class="form-label d-block">BMI</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="1"><label class="form-check-label">>35kg/㎡</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="0"><label class="form-check-label">≤35kg/㎡</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 6: Age -->
+				  <div class="mb-4">
+					<label class="form-label d-block">Age</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q6" value="0"><label class="form-check-label">≤50 years</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q6" value="1"><label class="form-check-label">>50 years</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 7: Neck circumference -->
+				  <div class="mb-4">
+					<label class="form-label d-block">Neck circumference</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q7" value="1"><label class="form-check-label">>40 cm</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q7" value="0"><label class="form-check-label">≤40 cm</label></div>
+					</div>
+				  </div>
+			  
+				  <!-- Question 8: Gender -->
+				  <div class="mb-4">
+					<label class="form-label d-block">Gender</label>
+					<div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q8" value="1"><label class="form-check-label">Male</label></div>
+					  <div class="form-check"><input class="form-check-input" type="radio" name="q8" value="0"><label class="form-check-label">Female</label></div>
+					</div>
+				  </div>
+			  
+				  <div class="mt-4 d-flex justify-content-center">
+					<button type="button" class="btn btn-primary prev-step mx-2">Previous</button>
+					<button type="button" class="btn btn-primary next-step mx-2">Next</button>
+				  </div>
+				</form>
+			  </div>
+			  
+
+			  <div class="step step-9">
+				<h3 class="text-center mb-2"> Questionnaire on lifestyle and Medical conditions</h3>
+				
+				<!-- Question 1 -->
+				<div class="mb-3">
+					<label class="form-label">How easily do you get tired?</label>
+					<div>
+						<input type="radio" name="question1" value="After mild physical activity"> After mild physical activity
+					</div>
+					<div>
+						<input type="radio" name="question1" value="After moderate activity"> After moderate activity
+					</div>
+					<div>
+						<input type="radio" name="question1" value="After strenuous activity"> After strenuous activity
+					</div>
+				</div>
+			
+				<!-- Question 2 -->
+				<div class="mb-3">
+					<label class="form-label">In the last one year, have you felt shortness of breath?</label>
+					<div>
+						<input type="radio" name="question2" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question2" value="Occasionally"> Occasionally
+					</div>
+					<div>
+						<input type="radio" name="question2" value="Regularly"> Regularly
+					</div>
+				</div>
+			
+				<!-- Question 3 -->
+				<div class="mb-3">
+					<label class="form-label">In the last one year, did you feel sudden abnormal sweating, nausea or irregular heartbeat?</label>
+					<div>
+						<input type="radio" name="question3" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question3" value="Occasionally"> Occasionally
+					</div>
+					<div>
+						<input type="radio" name="question3" value="Regularly"> Regularly
+					</div>
+				</div>
+			
+				<!-- Question 4 -->
+				<div class="mb-3">
+					<label class="form-label">In a day, how much time do you spend sitting?</label>
+					<div>
+						<input type="radio" name="question4" value="< 1 hours"> < 1 hours
+					</div>
+					<div>
+						<input type="radio" name="question4" value="1-3 hours"> 1-3 hours
+					</div>
+					<div>
+						<input type="radio" name="question4" value="3-6 hours"> 3-6 hours
+					</div>
+					<div>
+						<input type="radio" name="question4" value="> 6 hours"> > 6 hours
+					</div>
+				</div>
+			
+				<!-- Question 5 -->
+				<div class="mb-3">
+					<label class="form-label">Do you take medicines to sleep?</label>
+					<div>
+						<input type="radio" name="question5" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question5" value="No"> No
+					</div>
+				</div>
+			
+				<!-- Question 6 -->
+				<div class="mb-3">
+					<label class="form-label">How frequently do you take medicines?</label>
+					<div>
+						<input type="radio" name="question6" value="Daily"> Daily
+					</div>
+					<div>
+						<input type="radio" name="question6" value="Occasionally"> Occasionally
+					</div>
+				</div>
+			
+				<!-- Question 7 -->
+				<div class="mb-3">
+					<label class="form-label">What is the duration of exercise per day?</label>
+					<input type="text" class="form-control" name="question7">
+				</div>
+			
+				<!-- Question 8 -->
+				<div class="mb-3">
+					<label class="form-label">How would you rate the intensity of your exercise?</label>
+					<div>
+						<input type="radio" name="question8" value="Mild"> Mild
+					</div>
+					<div>
+						<input type="radio" name="question8" value="Moderate"> Moderate
+					</div>
+					<div>
+						<input type="radio" name="question8" value="Strenuous"> Strenuous
+					</div>
+				</div>
+			
+				<!-- Question 9 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from high blood pressure?</label>
+					<div>
+						<input type="radio" name="question9" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question9" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question9" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 10 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from high blood sugar?</label>
+					<div>
+						<input type="radio" name="question10" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question10" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question10" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 11 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from high blood cholesterol?</label>
+					<div>
+						<input type="radio" name="question11" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question11" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question11" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 12 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from thyroid problems?</label>
+					<div>
+						<input type="radio" name="question12" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question12" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question12" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 13 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from neurological disorder?</label>
+					<div>
+						<input type="radio" name="question13" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question13" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question13" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 14 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from heart diseases?</label>
+					<div>
+						<input type="radio" name="question14" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question14" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question14" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 15 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from respiratory problems?</label>
+					<div>
+						<input type="radio" name="question15" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question15" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question15" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 16 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from liver problems?</label>
+					<div>
+						<input type="radio" name="question16" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question16" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question16" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 17 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from bone/joint problems?</label>
+					<div>
+						<input type="radio" name="question17" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question17" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question17" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 18 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from Kidney problems?</label>
+					<div>
+						<input type="radio" name="question18" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question18" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question18" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 19 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from eye problems?</label>
+					<div>
+						<input type="radio" name="question19" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question19" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question19" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Question 20 -->
+				<div class="mb-3">
+					<label class="form-label">Do you suffer from gastrointestinal problems?</label>
+					<div>
+						<input type="radio" name="question20" value="Yes"> Yes
+					</div>
+					<div>
+						<input type="radio" name="question20" value="No"> No
+					</div>
+					<div>
+						<input type="radio" name="question20" value="Don't Know"> Don't Know
+					</div>
+				</div>
+			
+				<!-- Navigation Buttons -->
+				<div class="mt-4 d-flex justify-content-center">
+					<button type="button" class="btn btn-primary prev-step mx-2">Previous</button>
+					<button type="submit" class="btn btn-success">Submit</button>
+				</div>
+			</div>			
+			
+		</form>
+	</div>
+
+	<script>
+		let currentStep = 1;
+		const totalSteps = 9;
+
+		document.addEventListener('DOMContentLoaded', function () {
+			showStep(currentStep);
+
+			document.querySelectorAll('.next-step').forEach(btn => {
+				btn.addEventListener('click', function () {
+					if (currentStep < totalSteps) {
+						currentStep++;
+						showStep(currentStep);
+					}
+				});
+			});
+
+			document.querySelectorAll('.prev-step').forEach(btn => {
+				btn.addEventListener('click', function () {
+					if (currentStep > 1) {
+						currentStep--;
+						showStep(currentStep);
+					}
+				});
+			});
+
+			document.querySelectorAll('.step-circle').forEach((circle, index) => {
+				circle.addEventListener('click', function () {
+					currentStep = index + 1;
+					showStep(currentStep);
+				});
+			});
+		});
+
+		function showStep(step) {
+			// Hide all steps
+			document.querySelectorAll('.step').forEach(s => s.style.display = 'none');
+
+			// Show current step
+			const currentStepDiv = document.querySelector('.step-' + step);
+			if (currentStepDiv) currentStepDiv.style.display = 'block';
+
+			// Update progress bar
+			const progressPercent = ((step - 1) / (totalSteps - 1)) * 100;
+			document.querySelector('.progress-bar').style.width = progressPercent + '%';
+			document.querySelector('.progress-bar').setAttribute('aria-valuenow', progressPercent);
+
+			// Highlight current step circle
+			document.querySelectorAll('.step-circle').forEach((circle, idx) => {
+				circle.style.backgroundColor = (idx + 1 === step) ? '#1A76D1' : '#fff';
+				circle.style.color = (idx + 1 === step) ? '#fff' : '#000';
+				circle.style.borderColor = (idx + 1 === step) ? '#1A76D1' : '#007bff';
+			});
+		}
+	</script>
 
 
 
@@ -590,6 +1752,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+
 </body>
 
 </html>
