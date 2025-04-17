@@ -323,12 +323,12 @@
 					<li><strong>Contact information:</strong> Dr. Anshu Bhardwaj, +91-9910727490</li>
 				</ol>
 				<div class="text-center">
-					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC1', 'pisModal')">
-						Please accept our T&C
+					<button class="btn btn-success my-2"  onclick="acceptTnC('agreeTandC1', 'pisModal')">
+						 accepted  T&C
 					</button>
 
-					<button class="btn btn-danger" onclick="showDeclineMsg(this)">No, I can't agree</button>
-					<div class="text-danger mt-2 d-none">If you can't agree... then you can't take a survey!</div>
+					<button class="btn btn-danger" onclick="showDeclineMsg(this)">Denied</button>
+					<div class="text-danger mt-2 d-none">If you can't accepted... then you can't take a survey!</div>
 				</div>
 			</div>
 		</div>
@@ -373,10 +373,9 @@
 					<li><strong>Contact information:</strong> Dr. Anshu Bhardwaj, +91-9910727490</li>
 				</ol>
 				<div class="text-center">
-					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC2', 'icfModal')">Please accept
-						our T&C</button>
-					<button class="btn btn-danger" onclick="showDeclineMsg(this)">No, I can't agree</button>
-					<div class="text-danger mt-2 d-none">If you can't agree... then you can't take a survey!</div>
+					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC2', 'icfModal')"> accepted  T&C</button>
+					<button class="btn btn-danger" onclick="showDeclineMsg(this)">Denied</button>
+					<div class="text-danger mt-2 d-none">If you can't accepted... then you can't take a survey!</div>
 				</div>
 			</div>
 		</div>
@@ -401,9 +400,7 @@
 				warningMsg.classList.add("d-none");
 			}
 
-			// Show alert first, then close the modal after user clicks "OK"
-			alert(`Thank you! You have accepted the ${modalId === 'pisModal' ? 'PIS' : 'ICF'}.`);
-
+			
 			// Enable submit button if both checkboxes are checked
 			toggleSubmitButton();
 
