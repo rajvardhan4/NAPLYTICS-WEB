@@ -131,7 +131,7 @@
 
 		#containers {
 			border-radius: 20px;
-			background: radial-gradient(#f982dc91, #3ba7f3);
+			background: radial-gradient(#29aaf1a3, #3ba7f3);
 		}
 
 		.step-container {
@@ -182,6 +182,12 @@
 		.form-check-input {
 			position: absolute;
 			margin-top: .25rem;
+		}
+
+		.form-check-input {
+			position: absolute;
+			margin-top: .25rem;
+			margin-left: 0;
 		}
 	</style>
 
@@ -379,11 +385,11 @@
 				</ol>
 				<div class="text-center">
 					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC1', 'pisModal')">
-						Please accept our T&C
+						accept T&C
 					</button>
 
-					<button class="btn btn-danger" onclick="showDeclineMsg(this)">No, I can't agree</button>
-					<div class="text-danger mt-2 d-none">If you can't agree... then you can't take a survey!</div>
+					<button class="btn btn-danger" onclick="showDeclineMsg(this)">Deny</button>
+					<div class="text-danger mt-2 d-none">If you can't accepted... then you can't take a survey!</div>
 				</div>
 			</div>
 		</div>
@@ -428,10 +434,12 @@
 					<li><strong>Contact information:</strong> Dr. Anshu Bhardwaj, +91-9910727490</li>
 				</ol>
 				<div class="text-center">
-					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC2', 'icfModal')">Please accept
-						our T&C</button>
-					<button class="btn btn-danger" onclick="showDeclineMsg(this)">No, I can't agree</button>
-					<div class="text-danger mt-2 d-none">If you can't agree... then you can't take a survey!</div>
+					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC1', 'pisModal')">
+						accept T&C
+					</button>
+
+					<button class="btn btn-danger" onclick="showDeclineMsg(this)">Deny</button>
+					<div class="text-danger mt-2 d-none">If you can't accepted... then you can't take a survey!</div>
 				</div>
 			</div>
 		</div>
@@ -521,7 +529,7 @@
 
 				<!-- ID 1 - Name -->
 				<div class="mb-3 row">
-					<label for="field1" class="col-sm-12 col-md-4 col-form-label form-label">Please type your
+					<label for="field1" class="col-sm-12 col-md-4 col-form-label form-label">1. Please type your
 						name</label>
 					<div class="col-sm-12 col-md-8">
 						<input type="text" class="form-control" id="field1" name="field1" required>
@@ -530,7 +538,7 @@
 
 				<!-- ID 2 - Email -->
 				<div class="mb-3 row">
-					<label for="field2" class="col-sm-12 col-md-4 col-form-label form-label">Please type your email
+					<label for="field2" class="col-sm-12 col-md-4 col-form-label form-label">2. Please type your email
 						address</label>
 					<div class="col-sm-12 col-md-8">
 						<input type="email" class="form-control" id="field2" name="field2" required>
@@ -539,7 +547,7 @@
 
 				<!-- ID 3 - Gender -->
 				<div class="mb-3">
-					<label class="form-label">Please choose your gender</label><br>
+					<label class="form-label">3. Please choose your gender</label><br>
 					<div class="form-check">
 						<input class="form-check-input" type="radio" name="field3" id="gender1" value="Male" required>
 						<label class="form-check-label" for="gender1">Male</label>
@@ -561,7 +569,7 @@
 
 				<!-- ID 4 - Age -->
 				<div class="mb-3 row">
-					<label for="field4" class="col-sm-12 col-md-4 col-form-label form-label">Let me know your
+					<label for="field4" class="col-sm-12 col-md-4 col-form-label form-label">4. Let me know your
 						age</label>
 					<div class="col-sm-12 col-md-8">
 						<input type="number" class="form-control" id="field4" name="field4" min="18" max="100" required>
@@ -570,7 +578,7 @@
 
 				<!-- ID 5 - Consent -->
 				<div class="mb-3">
-					<label class="form-label">Do you consent to provide information?</label><br>
+					<label class="form-label">5. Do you consent to provide information?</label><br>
 					<div class="form-check">
 						<input class="form-check-input" type="radio" name="field5" id="consentYes" value="Yes" required>
 						<label class="form-check-label" for="consentYes">Yes</label>
@@ -583,7 +591,7 @@
 
 				<!-- ID 6 - Occupation -->
 				<div class="mb-3">
-					<label class="form-label">Occupation</label><br>
+					<label class="form-label">6. Occupation</label><br>
 					<div class="form-check">
 						<input class="form-check-input" type="radio" name="field6" id="occupation1" value="Researcher"
 							required>
@@ -737,68 +745,95 @@
 				<div class="mb-3">
 					<label class="form-label">1. During the past month, what time have you usually gone to bed at
 						night?</label>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="0"> 8:00 –
-						10:00 PM</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="1"> 10:00 -
-						11:00 PM</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="2"> 11:00 PM -
-						12:00 AM</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="3"> 12:00 -
-						2:00 AM</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q1" value="4"> after 2:00
-						AM</div>
+
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1"><label
+							class="form-check-label">8:00 –
+							10:00 PM</label></div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1"><label
+							class="form-check-label">10:00 -
+							11:00 PM</label></div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1"><label
+							class="form-check-label">11:00 PM -
+							12:00 AM</label></div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1"><label
+							class="form-check-label">12:00 -
+							2:00 AM</label></div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q1"><label
+							class="form-check-label">after 2:00
+							AM</label></div>
+
+
 				</div>
 				<!-- Question 2 -->
 				<div class="mb-3">
 					<label class="form-label">2. How long (in minutes) has it usually taken you to fall asleep?</label>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="0"> 10 - 15
-					</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="1"> 15 - 30
-					</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="2"> 30 - 45
-					</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="3"> 45 - 60
-					</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="4"> more than
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="0"> <label
+							class="form-check-label">10 - 15
+						</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="1"> <label
+							class="form-check-label">15 - 30
+						</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="2"> <label
+							class="form-check-label">30 - 45
+						</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="3"> <label
+							class="form-check-label">45 - 60
+						</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q2" value="4"> <label
+							class="form-check-label">more than</label>
 						60 mins</div>
 				</div>
 
 				<!-- Question 3 -->
 				<div class="mb-3">
 					<label class="form-label">3. What time have you usually gotten up in the morning?</label>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="0"> Before
-						5:00 am</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="1"> 5:00 -
-						6:30 am</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="2"> 6:30 -
-						7:45 am</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="3"> 7:45 -
-						9:45 am</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="4"> 9:45 -
-						11:00 am</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="5"> After
-						11:00 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="0"> <label
+							class="form-check-label">Before
+						</label> 5:00 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="1"> <label
+							class="form-check-label">5:00 -
+						</label> 6:30 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="2"> <label
+							class="form-check-label">6:30 -
+						</label> 7:45 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="3"> <label
+							class="form-check-label">7:45 -
+						</label> 9:45 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="4"> <label
+							class="form-check-label">9:45 -
+						</label> 11:00 am</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q3" value="5"> <label
+							class="form-check-label">After
+						</label> 11:00 am</div>
 				</div>
 
 				<!-- Question 4 -->
 				<div class="mb-3">
 					<label class="form-label">4. How many hours of actual sleep did you get at night?</label>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="0"> less than
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="0"><label
+							class="form-check-label">less than</label>
 						4 hours</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="1"> 4 - 5
-						hours</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="2"> 5 - 6
-						hours</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="3"> 6 - 7
-						hours</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="4"> 7 - 8
-						hours</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="5"> 8 - 9
-						hours</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="6"> 9 - 10
-						hours</div>
-					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="7"> more than
-						10 hours</div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="1"><label
+							class="form-check-label">4 - 5
+							hours</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="2"><label
+							class="form-check-label">5 - 6
+							hours</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="3"><label
+							class="form-check-label">6 - 7
+							hours</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="4"><label
+							class="form-check-label">7 - 8
+							hours</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="5"><label
+							class="form-check-label">8 - 9
+							hours</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="6"><label
+							class="form-check-label">9 - 10
+							hours</label> </div>
+					<div class="form-check"><input class="form-check-input" type="radio" name="q4" value="7"><label
+							class="form-check-label">more than
+							10 hours</label> </div>
 				</div>
 
 				<div class="mt-4 d-flex justify-content-center">
@@ -817,7 +852,8 @@
 
 				<!-- Question 1 -->
 				<div class="mb-3">
-					<label for="snoring" class="form-label">If you have a roommate or bed partner, ask him/her how often
+					<label for="snoring" class="form-label">1. If you have a roommate or bed partner, ask him/her how
+						often
 						in the past month you have had loud snoring:</label>
 					<div class="form-check">
 						<input class="form-check-input" type="radio" name="snoring" id="snoring1"
@@ -843,7 +879,7 @@
 
 				<!-- Question 2 -->
 				<div class="mb-3">
-					<label for="breathing" class="form-label">If you have a roommate or bed partner, ask him/her how
+					<label for="breathing" class="form-label">2. If you have a roommate or bed partner, ask him/her how
 						often in the past month you have had long pauses between breaths while asleep:</label>
 					<div class="form-check">
 						<input class="form-check-input" type="radio" name="breathing" id="breathing1"
@@ -869,7 +905,8 @@
 
 				<!-- Question 3 -->
 				<div class="mb-3">
-					<label for="legs" class="form-label">If you have a roommate or bed partner, ask him/her how often in
+					<label for="legs" class="form-label">3. If you have a roommate or bed partner, ask him/her how often
+						in
 						the past month you have had legs twitching or jerking while you sleep:</label>
 					<div class="form-check">
 						<input class="form-check-input" type="radio" name="legs" id="legs1"
@@ -895,14 +932,15 @@
 
 				<!-- Question 4 -->
 				<div class="mb-3">
-					<label for="sittingTime" class="form-label">In a day, how much time do you spend sitting? (e.g., In
+					<label for="sittingTime" class="form-label">4. In a day, how much time do you spend sitting? (e.g.,
+						In
 						a car, while stopped for a few minutes in traffic):</label>
 					<input type="text" class="form-control" id="sittingTime" name="sittingTime">
 				</div>
 
 				<!-- Question 5 -->
 				<div class="mb-3">
-					<label for="disorientation" class="form-label">If you have a roommate or bed partner, ask him/her
+					<label for="disorientation" class="form-label">5. If you have a roommate or bed partner, ask him/her
 						how often in the past month you have had episodes of disorientation or confusion during
 						sleep:</label>
 					<div class="form-check">
@@ -942,7 +980,7 @@
 
 				<div class="mb-4">
 
-					<label class="form-label">On this scale subjects indicate which level best reflects the
+					<label class="form-label">1. On this scale subjects indicate which level best reflects the
 						psycho-physical state experienced in the last 10 min.</label>
 
 					<div class="form-check mb-2">
@@ -999,9 +1037,8 @@
 			<div class="step step-6">
 				<h3 class="text-center mb-4">Step 6: Perceived Stress Scale</h3>
 
-				<p class="text-center mb-4">For each question choose from the following alternatives: Never, Almost
-					never, Sometimes, Fairly often, Very often</p>
-
+				<label class="form-label">For each question choose from the following alternatives: Never, Almost
+					never, Sometimes, Fairly often, Very often</label>
 				<!-- Question 1 -->
 				<div class="mb-4">
 					<label class="form-label">1. In the last month, how often have you been upset because of something
@@ -1253,7 +1290,7 @@
 				<form id="stop-bang-form">
 					<!-- Question 1: Do you snore loudly? -->
 					<div class="mb-4">
-						<label class="form-label d-block">Do you snore loudly?</label>
+						<label class="form-label d-block">1. Do you snore loudly?</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q1"
 									value="1"><label class="form-check-label">Yes</label></div>
@@ -1264,7 +1301,7 @@
 
 					<!-- Question 2: Do you often feel tired, fatigued, or sleepy during the daytime -->
 					<div class="mb-4">
-						<label class="form-label d-block">Do you often feel tired, fatigued, or sleepy during the
+						<label class="form-label d-block">2. Do you often feel tired, fatigued, or sleepy during the
 							daytime?</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q2"
@@ -1276,7 +1313,8 @@
 
 					<!-- Question 3: Has anyone observed you stop breathing during sleep -->
 					<div class="mb-4">
-						<label class="form-label d-block">Has anyone observed you stop breathing during sleep?</label>
+						<label class="form-label d-block">3. Has anyone observed you stop breathing during
+							sleep?</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q3"
 									value="1"><label class="form-check-label">Yes</label></div>
@@ -1287,7 +1325,7 @@
 
 					<!-- Question 4: Do you have (or are you being treated for) high blood pressure -->
 					<div class="mb-4">
-						<label class="form-label d-block">Do you have (or are you being treated for) high blood
+						<label class="form-label d-block">4. Do you have (or are you being treated for) high blood
 							pressure?</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q4"
@@ -1299,7 +1337,7 @@
 
 					<!-- Question 5: BMI -->
 					<div class="mb-4">
-						<label class="form-label d-block">BMI</label>
+						<label class="form-label d-block">5. BMI</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q5"
 									value="1"><label class="form-check-label">>35kg/㎡</label></div>
@@ -1310,7 +1348,7 @@
 
 					<!-- Question 6: Age -->
 					<div class="mb-4">
-						<label class="form-label d-block">Age</label>
+						<label class="form-label d-block">6. Age</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q6"
 									value="0"><label class="form-check-label">≤50 years</label></div>
@@ -1321,7 +1359,7 @@
 
 					<!-- Question 7: Neck circumference -->
 					<div class="mb-4">
-						<label class="form-label d-block">Neck circumference</label>
+						<label class="form-label d-block">7. Neck circumference</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q7"
 									value="1"><label class="form-check-label">>40 cm</label></div>
@@ -1332,7 +1370,7 @@
 
 					<!-- Question 8: Gender -->
 					<div class="mb-4">
-						<label class="form-label d-block">Gender</label>
+						<label class="form-label d-block">8. Gender</label>
 						<div>
 							<div class="form-check"><input class="form-check-input" type="radio" name="q8"
 									value="1"><label class="form-check-label">Male</label></div>
@@ -1354,7 +1392,7 @@
 
 				<!-- Question 1 -->
 				<div class="mb-3">
-					<label class="form-label">How easily do you get tired?</label>
+					<label class="form-label">1. How easily do you get tired?</label>
 					<div>
 						<input type="radio" name="question1" value="After mild physical activity"> After mild physical
 						activity
@@ -1369,7 +1407,7 @@
 
 				<!-- Question 2 -->
 				<div class="mb-3">
-					<label class="form-label">In the last one year, have you felt shortness of breath?</label>
+					<label class="form-label">2. In the last one year, have you felt shortness of breath?</label>
 					<div>
 						<input type="radio" name="question2" value="No"> No
 					</div>
@@ -1383,7 +1421,7 @@
 
 				<!-- Question 3 -->
 				<div class="mb-3">
-					<label class="form-label">In the last one year, did you feel sudden abnormal sweating, nausea or
+					<label class="form-label">3. In the last one year, did you feel sudden abnormal sweating, nausea or
 						irregular heartbeat?</label>
 					<div>
 						<input type="radio" name="question3" value="No"> No
@@ -1398,7 +1436,7 @@
 
 				<!-- Question 4 -->
 				<div class="mb-3">
-					<label class="form-label">In a day, how much time do you spend sitting?</label>
+					<label class="form-label">4. In a day, how much time do you spend sitting?</label>
 					<div>
 						<input type="radio" name="question4" value="< 1 hours">
 						< 1 hours </div>
@@ -1415,7 +1453,7 @@
 
 					<!-- Question 5 -->
 					<div class="mb-3">
-						<label class="form-label">Do you take medicines to sleep?</label>
+						<label class="form-label">5. Do you take medicines to sleep?</label>
 						<div>
 							<input type="radio" name="question5" value="Yes"> Yes
 						</div>
@@ -1426,7 +1464,7 @@
 
 					<!-- Question 6 -->
 					<div class="mb-3">
-						<label class="form-label">How frequently do you take medicines?</label>
+						<label class="form-label">6. How frequently do you take medicines?</label>
 						<div>
 							<input type="radio" name="question6" value="Daily"> Daily
 						</div>
@@ -1437,13 +1475,13 @@
 
 					<!-- Question 7 -->
 					<div class="mb-3">
-						<label class="form-label">What is the duration of exercise per day?</label>
+						<label class="form-label">7. What is the duration of exercise per day?</label>
 						<input type="text" class="form-control" name="question7">
 					</div>
 
 					<!-- Question 8 -->
 					<div class="mb-3">
-						<label class="form-label">How would you rate the intensity of your exercise?</label>
+						<label class="form-label">8. How would you rate the intensity of your exercise?</label>
 						<div>
 							<input type="radio" name="question8" value="Mild"> Mild
 						</div>
@@ -1457,7 +1495,7 @@
 
 					<!-- Question 9 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from high blood pressure?</label>
+						<label class="form-label">9. Do you suffer from high blood pressure?</label>
 						<div>
 							<input type="radio" name="question9" value="Yes"> Yes
 						</div>
@@ -1471,7 +1509,7 @@
 
 					<!-- Question 10 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from high blood sugar?</label>
+						<label class="form-label">10. Do you suffer from high blood sugar?</label>
 						<div>
 							<input type="radio" name="question10" value="Yes"> Yes
 						</div>
@@ -1485,7 +1523,7 @@
 
 					<!-- Question 11 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from high blood cholesterol?</label>
+						<label class="form-label">11. Do you suffer from high blood cholesterol?</label>
 						<div>
 							<input type="radio" name="question11" value="Yes"> Yes
 						</div>
@@ -1499,7 +1537,7 @@
 
 					<!-- Question 12 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from thyroid problems?</label>
+						<label class="form-label">12. Do you suffer from thyroid problems?</label>
 						<div>
 							<input type="radio" name="question12" value="Yes"> Yes
 						</div>
@@ -1513,7 +1551,7 @@
 
 					<!-- Question 13 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from neurological disorder?</label>
+						<label class="form-label">13. Do you suffer from neurological disorder?</label>
 						<div>
 							<input type="radio" name="question13" value="Yes"> Yes
 						</div>
@@ -1527,7 +1565,7 @@
 
 					<!-- Question 14 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from heart diseases?</label>
+						<label class="form-label">14. Do you suffer from heart diseases?</label>
 						<div>
 							<input type="radio" name="question14" value="Yes"> Yes
 						</div>
@@ -1541,7 +1579,7 @@
 
 					<!-- Question 15 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from respiratory problems?</label>
+						<label class="form-label">15. Do you suffer from respiratory problems?</label>
 						<div>
 							<input type="radio" name="question15" value="Yes"> Yes
 						</div>
@@ -1555,7 +1593,7 @@
 
 					<!-- Question 16 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from liver problems?</label>
+						<label class="form-label">16. Do you suffer from liver problems?</label>
 						<div>
 							<input type="radio" name="question16" value="Yes"> Yes
 						</div>
@@ -1569,7 +1607,7 @@
 
 					<!-- Question 17 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from bone/joint problems?</label>
+						<label class="form-label">17. Do you suffer from bone/joint problems?</label>
 						<div>
 							<input type="radio" name="question17" value="Yes"> Yes
 						</div>
@@ -1583,7 +1621,7 @@
 
 					<!-- Question 18 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from Kidney problems?</label>
+						<label class="form-label">18. Do you suffer from Kidney problems?</label>
 						<div>
 							<input type="radio" name="question18" value="Yes"> Yes
 						</div>
@@ -1597,7 +1635,7 @@
 
 					<!-- Question 19 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from eye problems?</label>
+						<label class="form-label">19. Do you suffer from eye problems?</label>
 						<div>
 							<input type="radio" name="question19" value="Yes"> Yes
 						</div>
@@ -1611,7 +1649,7 @@
 
 					<!-- Question 20 -->
 					<div class="mb-3">
-						<label class="form-label">Do you suffer from gastrointestinal problems?</label>
+						<label class="form-label">20. Do you suffer from gastrointestinal problems?</label>
 						<div>
 							<input type="radio" name="question20" value="Yes"> Yes
 						</div>
