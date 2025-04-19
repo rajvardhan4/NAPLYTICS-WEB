@@ -49,8 +49,6 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<style>
-
-
 		.Chartrow {
 			display: flex;
 			justify-content: center;
@@ -73,57 +71,56 @@
 		}
 
 		.Chartrow {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-bottom: 40px;
-    }
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 30px;
+			margin-bottom: 40px;
+		}
 
-	.chart-box {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  text-align: center;
-  box-sizing: border-box;
-}
+		.chart-box {
+			width: 100%;
+			max-width: 450px;
+			height: auto;
+			padding: 20px;
+			background: #fff;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+			text-align: center;
+			box-sizing: border-box;
+		}
 
-.chart-box p {
-  margin-bottom: 10px;
-  font-weight: bold;
-}
+		.chart-box p {
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
 
-.chart-box canvas {
-  width: 100% !important;
-  height: auto !important;
-  max-height: 300px;
-}
+		.chart-box canvas {
+			width: 100% !important;
+			height: auto !important;
+			max-height: 300px;
+		}
 
-/* Container for multiple charts */
-.Chartrow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-}
+		/* Container for multiple charts */
+		.Chartrow {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+			padding: 10px;
+		}
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .chart-box {
-    max-width: 90%;
-    padding: 15px;
-  }
+		/* Mobile responsiveness */
+		@media (max-width: 768px) {
+			.chart-box {
+				max-width: 90%;
+				padding: 15px;
+			}
 
-  .chart-box canvas {
-    max-height: 250px;
-  }
-}
-
+			.chart-box canvas {
+				max-height: 250px;
+			}
+		}
 	</style>
 
 
@@ -183,16 +180,15 @@
 								<nav class="navigation" style="padding-left: 105px;">
 									<ul class="nav menu">
 										<li class="active"><a href="index.html">Home </a>
-											
+
 										</li>
-										<li><a href="#">Aim </a></li>
+										<li><a href="index.html">Aim </a></li>
 										<li><a href="NapLytics.html">NapLytics
 											</a></li>
-										<li><a href="#">Approach</a>
-											
+										<li><a href="index.html">Approach</a>
+
 										</li>
-										<li><a href="#">Contact
-											</a></li>
+										
 									</ul>
 								</nav>
 							</div>
@@ -213,215 +209,132 @@
 
 
 
-<!-- Charts Section -->
-<section class="Feautes section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title mt-10px">
-            <h2>NapLytics Deep Sleeping</h2>
-            <img src="img/section-img.png" alt="Section Image">
-          </div>
-        </div>
-      </div>
-
-      <div class="Chartrow">
-        <div class="chart-box">
-          <p>Liver</p><canvas id="barChart"></canvas>
-        </div>
-        <div class="chart-box">
-          <p>Neurological Disorder</p><canvas id="lineChart"></canvas>
-        </div>
-        <div class="chart-box">
-          <p>Sleepiness Level</p><canvas id="pieChart"></canvas>
-        </div>
-        <div class="chart-box">
-          <p>Perceived Stress Scale</p><canvas id="doughnutChart"></canvas>
-        </div>
-        <div class="chart-box">
-          <p>Lifestyle & Medical</p><canvas id="radarChart"></canvas>
-        </div>
-        <div class="chart-box">
-          <p>Sleep Quality</p><canvas id="polarChart"></canvas>
-        </div>
-        <div class="chart-box">
-          <p>Karolinska Sleepiness</p><canvas id="horizontalBarChart"></canvas>
-        </div>
-        <div class="chart-box">
-          <p>Sleep Apnea Risk</p><canvas id="bubbleChart"></canvas>
-        </div>
-      </div>
-
-      <script>
-        new Chart(barChart, {
-          type: 'bar',
-          data: {
-            labels: ['A', 'B', 'C'],
-            datasets: [{ label: 'Data', data: [10, 20, 30], backgroundColor: '#36A2EB' }]
-          }
-        });
-
-        new Chart(lineChart, {
-          type: 'line',
-          data: {
-            labels: ['Mon', 'Tue', 'Wed'],
-            datasets: [{ label: 'Trend', data: [5, 15, 10], borderColor: '#4BC0C0', tension: 0.3 }]
-          }
-        });
-
-        new Chart(pieChart, {
-          type: 'pie',
-          data: {
-            labels: ['X', 'Y', 'Z'],
-            datasets: [{ data: [40, 30, 30], backgroundColor: ['#FF6384', '#FFCE56', '#36A2EB'] }]
-          }
-        });
-
-        new Chart(doughnutChart, {
-          type: 'doughnut',
-          data: {
-            labels: ['Yes', 'No'],
-            datasets: [{ data: [70, 30], backgroundColor: ['#4BC0C0', '#FF6384'] }]
-          }
-        });
-
-        new Chart(radarChart, {
-          type: 'radar',
-          data: {
-            labels: ['Speed', 'Power', 'Skill'],
-            datasets: [{
-              label: 'Player A',
-              data: [65, 59, 90],
-              backgroundColor: 'rgba(179,181,198,0.2)',
-              borderColor: 'rgba(179,181,198,1)'
-            }]
-          }
-        });
-
-        new Chart(polarChart, {
-          type: 'polarArea',
-          data: {
-            labels: ['Cat 1', 'Cat 2', 'Cat 3'],
-            datasets: [{ data: [11, 16, 7], backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'] }]
-          }
-        });
-
-        new Chart(horizontalBarChart, {
-          type: 'bar',
-          data: {
-            labels: ['One', 'Two', 'Three'],
-            datasets: [{ label: 'Votes', data: [12, 19, 3], backgroundColor: '#FF9F40' }]
-          },
-          options: {
-            indexAxis: 'y'
-          }
-        });
-
-        new Chart(bubbleChart, {
-          type: 'bubble',
-          data: {
-            datasets: [{
-              label: 'Bubbles',
-              data: [{ x: 10, y: 20, r: 10 }, { x: 15, y: 10, r: 15 }],
-              backgroundColor: '#9966FF'
-            }]
-          }
-        });
-      </script>
-    </div>
-  </section>
-	<!-- Footer Area -->
-	<footer id="footer" class="footer ">
-		<!-- Footer Top -->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>About Us</h2>
-							<p>Using advanced technology and innovative surveys, we collect and analyze sleep data to
-								understand your sleep patterns, habits, and potential sleep disorders. With this
-								information, we aim to guide you toward better sleep practices that lead to a healthier,
-								more energized life.</p>
-							<!-- Social -->
-							<ul class="social">
-								<li><a href="#"><i class="icofont-facebook"></i></a></li>
-								<li><a href="#"><i class="icofont-google-plus"></i></a></li>
-								<li><a href="#"><i class="icofont-twitter"></i></a></li>
-								<li><a href="#"><i class="icofont-vimeo"></i></a></li>
-								<li><a href="#"><i class="icofont-pinterest"></i></a></li>
-							</ul>
-							<!-- End Social -->
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer f-link">
-							<h2>Quick Links</h2>
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-12">
-									<ul>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
-										</li>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>
-												Aim</a>
-										</li>
-										<li><a href="NapLytics.html"><i class="fa fa-caret-right"
-													aria-hidden="true"></i>NapLytics</a>
-										</li>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Approach
-											</a></li>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a>
-										</li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Open Hours</h2>
-							<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
-							<ul class="time-sidual">
-								<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-								<li class="day">Saturday <span>9.00-18.30</span></li>
-								<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Newsletter</h2>
-							<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit
-								amet, consectetur adipisicing elit,</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-								<input name="email" placeholder="Email Address" class="common-input"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-									required="" type="email">
-								<button class="button"><i class="icofont icofont-paper-plane"></i></button>
-							</form>
-						</div>
+	<!-- Charts Section -->
+	<section class="Feautes section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title mt-10px">
+						<h2>NapLytics Deep Sleeping</h2>
+						<img src="img/section-img.png" alt="Section Image">
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--/ End Footer Top -->
-		<!-- Copyright -->
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<div class="copyright-content">
-							<p>© Copyright 2018 | All Rights Reserved by <a href="#" target="_blank">NapLytics.com</a>
-							</p>
-						</div>
-					</div>
+
+			<div class="Chartrow">
+				<div class="chart-box">
+					<p>Liver</p><canvas id="barChart"></canvas>
+				</div>
+				<div class="chart-box">
+					<p>Neurological Disorder</p><canvas id="lineChart"></canvas>
+				</div>
+				<div class="chart-box">
+					<p>Sleepiness Level</p><canvas id="pieChart"></canvas>
+				</div>
+				<div class="chart-box">
+					<p>Perceived Stress Scale</p><canvas id="doughnutChart"></canvas>
+				</div>
+				<div class="chart-box">
+					<p>Lifestyle & Medical</p><canvas id="radarChart"></canvas>
+				</div>
+				<div class="chart-box">
+					<p>Sleep Quality</p><canvas id="polarChart"></canvas>
+				</div>
+				<div class="chart-box">
+					<p>Karolinska Sleepiness</p><canvas id="horizontalBarChart"></canvas>
+				</div>
+				<div class="chart-box">
+					<p>Sleep Apnea Risk</p><canvas id="bubbleChart"></canvas>
 				</div>
 			</div>
+
+			<script>
+				new Chart(barChart, {
+					type: 'bar',
+					data: {
+						labels: ['A', 'B', 'C'],
+						datasets: [{ label: 'Data', data: [10, 20, 30], backgroundColor: '#36A2EB' }]
+					}
+				});
+
+				new Chart(lineChart, {
+					type: 'line',
+					data: {
+						labels: ['Mon', 'Tue', 'Wed'],
+						datasets: [{ label: 'Trend', data: [5, 15, 10], borderColor: '#4BC0C0', tension: 0.3 }]
+					}
+				});
+
+				new Chart(pieChart, {
+					type: 'pie',
+					data: {
+						labels: ['X', 'Y', 'Z'],
+						datasets: [{ data: [40, 30, 30], backgroundColor: ['#FF6384', '#FFCE56', '#36A2EB'] }]
+					}
+				});
+
+				new Chart(doughnutChart, {
+					type: 'doughnut',
+					data: {
+						labels: ['Yes', 'No'],
+						datasets: [{ data: [70, 30], backgroundColor: ['#4BC0C0', '#FF6384'] }]
+					}
+				});
+
+				new Chart(radarChart, {
+					type: 'radar',
+					data: {
+						labels: ['Speed', 'Power', 'Skill'],
+						datasets: [{
+							label: 'Player A',
+							data: [65, 59, 90],
+							backgroundColor: 'rgba(179,181,198,0.2)',
+							borderColor: 'rgba(179,181,198,1)'
+						}]
+					}
+				});
+
+				new Chart(polarChart, {
+					type: 'polarArea',
+					data: {
+						labels: ['Cat 1', 'Cat 2', 'Cat 3'],
+						datasets: [{ data: [11, 16, 7], backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'] }]
+					}
+				});
+
+				new Chart(horizontalBarChart, {
+					type: 'bar',
+					data: {
+						labels: ['One', 'Two', 'Three'],
+						datasets: [{ label: 'Votes', data: [12, 19, 3], backgroundColor: '#FF9F40' }]
+					},
+					options: {
+						indexAxis: 'y'
+					}
+				});
+
+				new Chart(bubbleChart, {
+					type: 'bubble',
+					data: {
+						datasets: [{
+							label: 'Bubbles',
+							data: [{ x: 10, y: 20, r: 10 }, { x: 15, y: 10, r: 15 }],
+							backgroundColor: '#9966FF'
+						}]
+					}
+				});
+			</script>
 		</div>
-		<!--/ End Copyright -->
+	</section>
+	<!-- footer -->
+	<footer class="bg-light py-3">
+		<div class="container text-center">
+			<p class="mb-0 fw-semibold">
+				<span class="text-primary fst-italic">Address:</span>
+				Sector 39A Rd, 39A, Sector 39, Chandigarh, 160036
+			</p>
+		</div>
 	</footer>
-	<!--/ End Footer Area -->
 
 
 

@@ -132,6 +132,14 @@
 			width: 20px;
 			height: 20px;
 		}
+
+		.section {
+			padding: 140px 100px !important;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
 	</style>
 
 
@@ -187,13 +195,12 @@
 						<div class="col-lg-7 col-md-9 col-12">
 							<!-- Main Menu -->
 							<div class="main-menu">
-								<nav class="navigation" style="padding-left: 105px;">
+								<nav class="navigation" style="padding-left: 210px;">
 									<ul class="nav menu">
 										<li class="active"><a href="#" style="text-decoration: none;">Home</a></li>
-										<li><a href="#" style="text-decoration: none;">Aim</a></li>
+										<li><a href="#aim" style="text-decoration: none;">Aim</a></li>
 										<li><a href="NapLytics.html" style="text-decoration: none;">NapLytics</a></li>
-										<li><a href="#" style="text-decoration: none;">Approach</a></li>
-										<li><a href="#" style="text-decoration: none;">Contact</a></li>
+										<li><a href="#Approach" style="text-decoration: none;">Approach</a></li>
 									</ul>
 								</nav>
 
@@ -323,8 +330,8 @@
 					<li><strong>Contact information:</strong> Dr. Anshu Bhardwaj, +91-9910727490</li>
 				</ol>
 				<div class="text-center">
-					<button class="btn btn-success my-2"  onclick="acceptTnC('agreeTandC1', 'pisModal')">
-						 accept T&C
+					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC1', 'pisModal')">
+						accept T&C
 					</button>
 
 					<button class="btn btn-danger" onclick="showDeclineMsg(this)">Deny</button>
@@ -373,7 +380,8 @@
 					<li><strong>Contact information:</strong> Dr. Anshu Bhardwaj, +91-9910727490</li>
 				</ol>
 				<div class="text-center">
-					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC2', 'icfModal')"> accept T&C</button>
+					<button class="btn btn-success my-2" onclick="acceptTnC('agreeTandC2', 'icfModal')"> accept
+						T&C</button>
 					<button class="btn btn-danger" onclick="showDeclineMsg(this)">Deny</button>
 					<div class="text-danger mt-2 d-none">If you can't accepted... then you can't take a survey!</div>
 				</div>
@@ -400,7 +408,7 @@
 				warningMsg.classList.add("d-none");
 			}
 
-			
+
 			// Enable submit button if both checkboxes are checked
 			toggleSubmitButton();
 
@@ -528,7 +536,7 @@
 										<a href="#" class="btn" data-bs-toggle="modal"
 											data-bs-target="#surveyModal">Take
 											Survey</a>
-										<a href="#" class="btn primary">contact  Now</a>
+										<a href="#" class="btn primary">contact Now</a>
 
 									</div>
 
@@ -666,10 +674,62 @@
 
 
 
+	<!-- Start service -->
+	<section class="services section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>How to start</h2>
+						<img src="img/section-img.png" alt="#">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12 ">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="fa-solid fa-user-plus"></i>
+						<h4><a href="service-details.html">Register With Your Email</a></h4>
+						<p>Help researchers understand sleep health effectively today. </p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 " style="border-left: 1px solid rgb(66, 66, 66);">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="icofont icofont-prescription"></i>
+						<h4><a href="service-details.html"> Take the Survey Form</a></h4>
+						<p>Please take the survey form seriously today.</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 " style="border-left: 1px solid rgb(66, 66, 66); ">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="fa-solid fa-file-pen"></i>
+						<h4><a href="service-details.html">Fill the Forms</a></h4>
+						<p>Don’t forget to fill the forms accurately.</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 " style="border-left: 1px solid rgb(66, 66, 66); ">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="fa-solid fa-moon"></i>
+						<h4><a href="service-details.html"> Know Your Sleep Quality</a></h4>
+						<p>Understand your sleep quality for better health. </p>
+					</div>
+					<!-- End Single Service -->
+				</div>
 
+			</div>
+		</div>
+	</section>
+	<!--/ End service -->
 
 	<!-- Start Why choose -->
-	<section class="why-choose section">
+	<section class="why-choose section" id="aim">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -700,19 +760,9 @@
 				<div class="col-lg-12 col-12" style="text-align: center;">
 					<!-- Start Choose Left -->
 					<div class="choose-left">
-						<h3>Who We Are</h3>
-						<p>At NapLytics, we are passionate about transforming data into meaningful insights. Our mission
-							is to simplify complex analytics and empower businesses to make smarter, data-driven
-							decisions. With a focus on innovation, efficiency, and user-friendly solutions, we strive to
-							bridge the gap between raw data and real-world impact.
-						</p>
-						<p>Driven by a team of tech enthusiasts, data analysts, and creative thinkers, NapLytics is
-							committed to delivering high-quality analytics tools that are both powerful and easy to use.
-							Whether you're a startup, an enterprise, or an individual looking to leverage the power of
-							data, we're here to help you unlock new possibilities.
-						</p>
+
 						<div class="row mt-5">
-							<div class="col-lg-6 col-md-6 col-sm-12 mt-4" style="text-align: left;">
+							<div class="col-lg-6 col-md-6 col-sm-12 " style="text-align: left;">
 								<ul class="list-imgs list">
 									<li><i class="fa fa-caret-right"></i> Create Survey Form</li>
 									<li><i class="fa fa-caret-right"></i> Collect Community Responses</li>
@@ -755,6 +805,35 @@
 		</div>
 	</section> -->
 	<!--/ End Call to action -->
+
+
+
+	<!-- Approach Section -->
+	<section class="portfolio section" id="Approach">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>
+							Our Approach
+						</h2>
+
+						<img src="img/section-img.png" alt="#">
+					</div>
+				</div>
+
+
+			</div>
+
+			<div>
+				<img src="img/aproc-chat1.png" class="img-fluid mt-3" alt="">
+				<img src="img/aproc-chat2.png" class="img-fluid mt-5" alt="">
+			</div>
+		</div>
+	</section>
+
+
+
 
 	<!-- Start portfolio -->
 	<section class="portfolio section">
@@ -815,161 +894,8 @@
 	</section>
 	<!--/ End portfolio -->
 
-	<!-- Start service -->
-	<section class="services section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h2>How to start</h2>
-						<img src="img/section-img.png" alt="#">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-12 " >
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="icofont icofont-prescription"></i>
-						<h4><a href="service-details.html">Register With Your Email</a></h4>
-						<p>Help researchers understand sleep health effectively today.   </p>
-					</div>
-					<!-- End Single Service -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-12 " style="border-left: 1px solid rgb(66, 66, 66);">
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="icofont icofont-stethoscope"></i>
-						<h4><a href="service-details.html"> Take the Survey Form</a></h4>
-						<p>Please take the survey form seriously today.</p>
-					</div>
-					<!-- End Single Service -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-12 " style="border-left: 1px solid rgb(66, 66, 66); ">
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="icofont icofont-heart-alt"></i>
-						<h4><a href="service-details.html">Fill the  Forms</a></h4>
-						<p>Don’t forget to fill the forms accurately.</p>
-					</div>
-					<!-- End Single Service -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-12 " style="border-left: 1px solid rgb(66, 66, 66); ">
-					<!-- Start Single Service -->
-					<div class="single-service">
-						<i class="icofont icofont-listening"></i>
-						<h4><a href="service-details.html"> Know Your Sleep Quality</a></h4>
-						<p>Understand your sleep quality for better health. </p>
-					</div>
-					<!-- End Single Service -->
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--/ End service -->
 
-	<!-- Pricing Table -->
-	<section class="pricing-table section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h2>Affordable Digital Healthcare Powered by AI</h2>
-						<img src="img/section-img.png" alt="#">
-						<p>Get access to advanced medical support and monitoring from the comfort of your home with
-							Naplytics.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- Single Table -->
-				<div class="col-lg-4 col-md-12 col-12">
-					<div class="single-table">
-						<!-- Table Head -->
-						<div class="table-head">
-							<div class="icon">
-								<i class="icofont-smart-phone"></i>
-							</div>
-							<h4 class="title"> Patient Monitoring</h4>
-							<div class="price">
-								<p class="amount">$99<span>/ Per Month</span></p>
-							</div>
-						</div>
-						<!-- Table List -->
-						<ul class="table-list">
-							<li><i class="icofont icofont-ui-check"></i>Real-time health data tracking</li>
-							<li><i class="icofont icofont-ui-check"></i>Alerts for abnormal vitals</li>
-							<li><i class="icofont icofont-ui-check"></i>Device integration support</li>
-							<li class="cross"><i class="icofont icofont-ui-close"></i>24/7 live monitoring</li>
-							<li class="cross"><i class="icofont icofont-ui-close"></i>Personal health assistant</li>
-						</ul>
-						<div class="table-bottom">
-							<a class="btn" href="#">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Table-->
 
-				<!-- Single Table -->
-				<div class="col-lg-4 col-md-12 col-12">
-					<div class="single-table">
-						<!-- Table Head -->
-						<div class="table-head">
-							<div class="icon">
-								<i class="icofont-brain-alt"></i>
-							</div>
-							<h4 class="title">AI-Based Diagnosis</h4>
-							<div class="price">
-								<p class="amount">$149<span>/ Per Report</span></p>
-							</div>
-						</div>
-						<!-- Table List -->
-						<ul class="table-list">
-							<li><i class="icofont icofont-ui-check"></i>Instant report analysis</li>
-							<li><i class="icofont icofont-ui-check"></i>ML-powered disease detection</li>
-							<li><i class="icofont icofont-ui-check"></i>Accurate symptom mapping</li>
-							<li><i class="icofont icofont-ui-close"></i>Custom treatment planning</li>
-							<li><i class="icofont icofont-ui-close"></i>Tele-doctor recommendation</li>
-						</ul>
-						<div class="table-bottom">
-							<a class="btn" href="#">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Table-->
-
-				<!-- Single Table -->
-				<div class="col-lg-4 col-md-12 col-12">
-					<div class="single-table">
-						<!-- Table Head -->
-						<div class="table-head">
-							<div class="icon">
-								<i class="icofont-video-alt"></i>
-							</div>
-							<h4 class="title">Telehealth Consultation</h4>
-							<div class="price">
-								<p class="amount">$199<span>/ Per Session</span></p>
-							</div>
-						</div>
-						<!-- Table List -->
-						<ul class="table-list">
-							<li><i class="icofont icofont-ui-check"></i>Consult top doctors online</li>
-							<li><i class="icofont icofont-ui-check"></i>Prescription delivery support</li>
-							<li><i class="icofont icofont-ui-check"></i>Multi-specialty consultations</li>
-							<li><i class="icofont icofont-ui-check"></i>Secure video sessions</li>
-							<li><i class="icofont icofont-ui-check"></i>Follow-up included</li>
-						</ul>
-						<div class="table-bottom">
-							<a class="btn" href="#">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Table-->
-			</div>
-		</div>
-	</section>
-	<!--/ End Pricing Table -->
 
 
 
@@ -1097,98 +1023,16 @@
 
 
 
-	<!-- Footer Area -->
-	<footer id="footer" class="footer ">
-		<!-- Footer Top -->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>About Us</h2>
-							<p>Using advanced technology and innovative surveys, we collect and analyze sleep data to
-								understand your sleep patterns, habits, and potential sleep disorders. With this
-								information, we aim to guide you toward better sleep practices that lead to a healthier,
-								more energized life.</p>
-							<!-- Social -->
-							<ul class="social">
-								<li><a href="#"><i class="icofont-facebook"></i></a></li>
-								<li><a href="#"><i class="icofont-google-plus"></i></a></li>
-								<li><a href="#"><i class="icofont-twitter"></i></a></li>
-								<li><a href="#"><i class="icofont-vimeo"></i></a></li>
-								<li><a href="#"><i class="icofont-pinterest"></i></a></li>
-							</ul>
-							<!-- End Social -->
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer f-link">
-							<h2>Quick Links</h2>
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-12">
-									<ul>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
-										</li>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>
-												Aim</a>
-										</li>
-										<li><a href="#"><i class="fa fa-caret-right"
-													aria-hidden="true"></i>NapLytics</a>
-										</li>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Approach
-											</a></li>
-										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a>
-										</li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Open Hours</h2>
-							<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
-							<ul class="time-sidual">
-								<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-								<li class="day">Saturday <span>9.00-18.30</span></li>
-								<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Newsletter</h2>
-							<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit
-								amet, consectetur adipisicing elit,</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-								<input name="email" placeholder="Email Address" class="common-input"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-									required="" type="email">
-								<button class="button"><i class="icofont icofont-paper-plane"></i></button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+	<!-- footer -->
+	<footer class="bg-light py-3">
+		<div class="container text-center">
+			<p class="mb-0 fw-semibold">
+				<span class="text-primary fst-italic">Address:</span>
+				Sector 39A Rd, 39A, Sector 39, Chandigarh, 160036
+			</p>
 		</div>
-		<!--/ End Footer Top -->
-		<!-- Copyright -->
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<div class="copyright-content">
-							<p>© Copyright 2018 | All Rights Reserved by <a href="#" target="_blank">NapLytics.com</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Copyright -->
 	</footer>
-	<!--/ End Footer Area -->
+
 
 
 
